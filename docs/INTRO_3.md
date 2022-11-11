@@ -9,13 +9,21 @@ Now that we are able to navigate on the command line the next question is: how d
 To view the content of a directory use the command **ll** (short for long list, i.e., a long version of the default command **ls** = list) which shows one line per file, program or directory in the specified location:
 
     john> ll
-    total 16
-    drwxr-xr-x  2  john  staff  68  17  Jul  10:32  <span style="color:blue">Files</span>
-
+    d rwxr-xr-x  2  john  staff   68  17  Jul  10:32  Files
+    d rwxr-xr-x  2  john  staff   68   2  Oct   2020  Workshops
+    d rwxr-xr-x  2  john  staff   68  22  Feb  14:02  meeting_notest
+    - rw-r--r--  1  john  staff  152  17  Jul  10:32  sequences.fasta
+    - rw-r--r--  1  john  staff 1551  17  Jul  10:32  to-do.txt
 
 Wow, ok, we can see that there are a lot of things in there. Let’s  take a closer look: first of all we see that the output of **ll** consists of ten columns:
 
-<img src="figures/intro_8.png" height="120px">
+    1     2      3   4      5     6   7    8     9     10
+    d rwxr-xr-x  2  john  staff   68  17  Jul  10:32  Files
+    d rwxr-xr-x  2  john  staff   68   2  Oct   2020  Workshops
+    d rwxr-xr-x  2  john  staff   68  22  Feb  14:02  meeting_notest
+    - rw-r--r--  1  john  staff  152  17  Jul  10:32  sequences.fasta
+    - rw-r--r--  1  john  staff 1551  17  Jul  10:32  to-do.txt
+
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
@@ -44,7 +52,9 @@ For beginners, the columns of most importance are usually
     <li>10 - What is the name of the file/directory?</li>
   </ul>
 
-Many CLIs also distinguish the type of a directory item by colour: directories are shown in blue, files in black.
+Many CLIs also distinguish the type of a directory item by colour: directories are shown in blue, files in black. For example, the same directory structure on my laptop looks like this:
+
+<img src="figures/intro_8.png" height="120px">
 
 With this knowledge we can now properly interpret the output of ll of our current working directory:
 

@@ -58,7 +58,7 @@ However, typing the absolute path whenever you want to change into a directory c
     <li>cd ..</li>
     <li>cd</li>
     <li>cd -</li>
-  <ol>
+  </ol>
 
 The first one, **cd ..** uses the dot-notation to change into the directory above this one, the so called **parent directory**, without having to type the absolute path:
 
