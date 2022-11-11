@@ -2,15 +2,31 @@
 
 [{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](INTRO_1.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](INTRO_3.md)
 
+When first opening a command-line or *terminal* you will see a screen that looks something like this
+ 
+    john> _
+    
+Instead of *john* you will see your login name, as well as maybe the name of the computer you are using followed by some character that indicates where you can start typing commands. In the above example it is a greater-than sing **>** but it often is also a dollar sign **$** or a hash **#**. This is followd by a full square or an underscore that indicates where in the line you are currently are, i.e., where the next typed character will appear.
+dda *#* or a *>*, but regardless of what character is used it means
+
+
 ## Location, location, location
 
-When first working with a command line it is useful to keep in mind that a command line and a GUI have the same purpose: show and interact with the different programs, files and directories on a computer. The difference is simply how they do it. For example, when you log in on a Windows computer you see the Desktop and all the folders and files that are on it. In contrast, when you start a command line you see a more or less empty window. To get the current location, i.e., the directory you are in, one has to type specific commands on the command line.
+When working with a command line it is useful to keep in mind that a its purpose is identical of that of a GUI: show the user the different programs, files and directories on a computer and provide an interface to interact with it. The difference is simply how they do it. With a GUI, e.g., on Windows, you start on the *Desktop* with all the different folders and fiels shown as icons. To get find out what directory you are in when using the command line, i.e., to get your current location, one has to type specific commands on the command line.
 
-Let’s start with the location. To see in which directory we are at the moment we can type the command **pwd** (short for print working directory) which prints out the current location:
+Let’s start with the location. To see in which directory we are in at the moment we can type the command **pwd** (short for print working directory) which prints out the current location:
 
-<img src="figures/intro_3.png" height="110px">
- 
-As you can see in the example above the so called path to the current working directory is */Users/tim*. The *‘/’* symbol in a path denote a directories: thus */Users/tim* indicates that we are in directory */tim* which is a subdirectory of directory */Users*.
+    john> pwd
+    /Users/john
+    john>
+
+The command printed our current location, */Users/john* followed by a new line where we can type the next command.
+
+On a my computer this will look like this:
+
+<img src="figures/intro_3.png" height="120px">
+
+As you can see in the example above the so called **path** to the current directory is */Users/tim*. The *‘/’* symbol in a path denote a directories: thus */Users/tim* indicates that we are in directory */tim* which is a subdirectory of directory */Users*.
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
