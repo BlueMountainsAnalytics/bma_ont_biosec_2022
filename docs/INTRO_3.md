@@ -54,15 +54,17 @@ For beginners, the columns of most importance are usually
 
 Many CLIs also distinguish the type of a directory item by colour: directories are shown in blue, files in black. For example, the same directory structure on my laptop looks like this:
 
-<img src="figures/intro_8.png" height="120px">
+<img src="figures/intro_7.png" height="120px">
+
+Also, as you can see, the first two columns often look like one column.
 
 With this knowledge we can now properly interpret the output of ll of our current working directory:
 
   <ul>
-    <li>It contains 3 directories: *Files*, *Workshops* and *meeting_notest*</li>
-    <li>It contains 2 files: *sequence.fasta* and *to-do.txt*</li>
-    <li>All files were created by me  (user *tim*)</li>
-    <li>The file *sequences.fasta*  is 251 bytes and file *to-do.txt* is of size 1551 bytes</li>
+    <li>It contains 3 directories: <i>Files</i>, <i>Workshops</i>, and <i>meeting_notest</i></li>
+    <li>It contains 2 files: <i>sequence.fasta</i>, and <i>to-do.txt</i</li>
+    <li>All files were created by me  (user <i>tim</i>)</li>
+    <li>The file <i>sequences.fasta</i>  is 251 bytes and file <i>to-do.txt</i> is of size 1551 bytes</li>
   </ul>
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_4.html">CONTINUE -></a></p>
