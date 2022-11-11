@@ -8,13 +8,14 @@ When first working with a command line it is useful to keep in mind that a comma
 
 Let’s start with the location. To see in which directory we are at the moment we can type the command **pwd** (short for print working directory) which prints out the current location:
 
-<img src="figures/intro_3.png" height="100px">
+<img src="figures/intro_3.png" height="110px">
  
 As you can see in the example above the so called path to the current working directory is */Users/tim*. The *‘/’* symbol in a path denote a directories: thus */Users/tim* indicates that we are in directory */tim* which is a subdirectory of directory */Users*.
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  **Your *home* directory**
+  Your *home* directory
+
   The default directory a user starts in after the login is also called the home directory of that user. It is usually named after the user (hence the */tim* directory).  On Apple systems all home directories are found in the */Users* directory. On Unix-based systems such as Ubuntu the home directories are usually located in  */homes*.
 </div>
 
@@ -30,7 +31,7 @@ In contrast to relative paths absolute paths specify a directory regardless of t
 	
 The last command for navigation on the command line is used to go one directory up into the parent directory of our current location. On the command line the parent directory of any location is specified by  two dots. This means if we are still in */Users/tim/data*  and want to change into the parent directory */Users/tim* we can do so by typing **cd ..**
 
-<img src="figures/intro_6.png" height="100px">
+<img src="figures/intro_6.png" height="120px">
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %}
@@ -44,4 +45,4 @@ The last command for navigation on the command line is used to go one directory 
 </div>
 [Answers](INTRO_ANS.md#selfcheck1)
 
-[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](QC.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](QC_M.md)
+[GO TO NEXT](INTRO_2.md)
