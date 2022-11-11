@@ -1,5 +1,8 @@
 # Command Line - Files and Directories
 
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](INTRO_2.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](INTRO_4.md)
+
+
 ## Where are my files?
 
 Now that we are able to navigate on the command line the next question is: how do I find out what files are in my directory? 
@@ -47,3 +50,5 @@ With this knowledge we can now properly interpret the output of ll of our curren
     <li>All files were created by me  (user *tim*)</li>
     <li>The file *sequences.fasta*  is 251 bytes and file *to-do.txt* is of size 1551 bytes</li>
   </ul>
+
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](QC.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](QC_M.md)

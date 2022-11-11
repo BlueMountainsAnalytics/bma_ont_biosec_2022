@@ -1,5 +1,7 @@
 # Command-line Navigation
 
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](INTRO_1.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](INTRO_3.md)
+
 ## Location, location, location
 
 When first working with a command line it is useful to keep in mind that a command line and a GUI have the same purpose: show and interact with the different programs, files and directories on a computer. The difference is simply how they do it. For example, when you log in on a Windows computer you see the Desktop and all the folders and files that are on it. In contrast, when you start a command line you see a more or less empty window. To get the current location, i.e., the directory you are in, one has to type specific commands on the command line.
@@ -41,3 +43,5 @@ The last command for navigation on the command line is used to go one directory 
   </ol>
 </div>
 [Answers](INTRO_ANS.md#selfcheck1)
+
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](QC.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](QC_M.md)

@@ -3,7 +3,7 @@
 This page provides a basic primer to the use of command-line interfaces such as Ubuntu or MACOS terminal.
 
 ## Content
- * [Introduction]
+ * Introduction
    * [What is a CLI?](INTRO_1.md)
    * [Navigation](INTRO_2.md)
    * [Files and Directories](INTRO_3.md)

@@ -1,5 +1,7 @@
 # Command Line - Commands 
 
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](INTRO_3.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](CTOOLS.md)
+
 ## Commands, arguments, and flags
 
 We have already used several different command line commands, e.g. **pwd** and **cd**. The difference between these two commands is that **pwd** can be run by itself whereas **cd** expects an additional argument: the name of the directory which we want to change into. Many different command line commands expect arguments, e.g. the command **mkdir** (short for make directory) can be used to create a new directory. It expects the *name of the new directory* as an argument:
@@ -71,3 +73,4 @@ Thus, a CLI command consists of
 </div>
 [Answers](INTRO_ANS.md#selfcheck2) 
 
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](QC.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](QC_M.md)
