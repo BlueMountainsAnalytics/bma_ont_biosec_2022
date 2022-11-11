@@ -41,11 +41,11 @@ The last command for navigation on the command line is used to go one directory 
     <li>What does CLI stand for?</li>
     <li>What command tells you your current location on the CLI?</li>
     <li>With what command do you change into another directory?</li>
-    <li>Can you think of way to change into the parent directory  other than using the command ‘cd ..’?</li>
+    <li>Can you think of way to change into the parent directory  other than using the command <i>cd ..</i>?</li>
   </ol>
 </div>
 [Answers](INTRO_ANS.md#selfcheck1)
 
-<p style="text-align:right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_2.html">INTRO3</a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_2.html">INTRO3</a>
 </p>
 [GO TO NEXT](INTRO_2.md)
