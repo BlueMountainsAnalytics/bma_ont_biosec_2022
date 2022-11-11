@@ -6,12 +6,12 @@
 
 The command line interface (CLI) often simply referred to as the command-line, console or terminal,  is  a  way of  interacting  with  a  computer  by  means  of  typing  commands  on a specific line and submitting them to the computer by hitting the enter key.  Historically, the command-line was the initial way of interacting with a personal computer: a user typed commands using the keyboard and the computer executed them.
 
-<img src="figures/intro_1.png" height="200px">
+<img src="figures/intro_1.png" height="300px">
 
 
 In contrast to the command line interface we interact with modern computers through graphical user interfaces (GUIs): on start-up we are greeted with logos of the computer vendor, colourful backgrounds and icons for the different programs, files and folders which we can click using a mouse-pointer or touch screen. The development a GUI and itsgraphical representation of the computer's storage content, clickable icons and a connected mouse-pointer, were crucial for the success of the personal computer.  
 
-<img src="figures/intro_2.png" height="200px">
+<img src="figures/intro_2.png" height="300px">
 
 
 ## Command-line and Bioinformatics

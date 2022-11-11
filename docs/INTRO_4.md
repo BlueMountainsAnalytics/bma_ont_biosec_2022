@@ -6,11 +6,11 @@
 
 We have already used several different command line commands, e.g. **pwd** and **cd**. The difference between these two commands is that **pwd** can be run by itself whereas **cd** expects an additional argument: the name of the directory which we want to change into. Many different command line commands expect arguments, e.g. the command **mkdir** (short for make directory) can be used to create a new directory. It expects the *name of the new directory* as an argument:
 
-<img src="figures/intro_9.png" height="60px">
+<img src="figures/intro_9.png" height="100px">
 
 As you can see in the output of **ll** there is now a new directory called *new_directory*. Similarly, we can remove a directory with the command **rmdir** (short for remove directory) and give *the name of the directory to remove* as an argument:
 
-<img src="figures/intro_10.png" height="60px">
+<img src="figures/intro_10.png" height="100px">
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
@@ -44,11 +44,11 @@ To remove a directory using the **rm** command we have to add the flag **-r**, w
 The **-r** flag of **rm** is used without any arguments, it acts like a switch for the behavior of **rm**. However, some flags also expect arguments. 
 Lets have a look at the command **head**. This command can be used to show the first lines of a text file. It expects the path to the file of interest as the argument and if no options are specified, it prints the first 10 lines of the specified file to the command line. Let’s have a look at the first 10 lines of the file *to-do.txt* in our current working directory using **head**:
 
-<img src="figures/intro_11.png" height="80px">
+<img src="figures/intro_11.png" height="160px">
 
 As you can see I still have quite a few things to do before I can go home. However, if we want to list a specified number of lines using head we can do so by using the *–n* flag of **head** and pass the number of lines we want to be listed as a parameter:
 
-<img src="figures/intro_12.png" height="80px">
+<img src="figures/intro_12.png" height="1200px">
 
 Thus, a CLI command consists of
 
@@ -62,7 +62,7 @@ Thus, a CLI command consists of
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %}
-  **Self-Check 2**
+  Self-Check 2
   <ol>
     <li>?How do you list the content of your current directory</li>
     <li>Which column of the ls output shows the size of a file?</li>
