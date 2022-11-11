@@ -63,29 +63,29 @@ However, typing the absolute path whenever you want to change into a directory c
 The first one, **cd ..** uses the dot-notation to change into the directory above this one, the so called **parent directory**, without having to type the absolute path:
 
     john> pwd
-    john> /homes/john/data
+    /homes/john/data
     john> cd ..
     john> pwd
-    john> /homes/john
+    /homes/john
 
 The second one, the **cd** command on its own, will always change into the users home directory, regardless of our current location:
 
     john> pwd
-    john> /homes/john/data/sequences/test1/
+    /homes/john/data/sequences/test1/
     john> cd
     john> pwd
-    john> /homes/john
+    /homes/john
 
 The third command, **cd -** will change back to the directory we just came from:
 
     john> pwd
-    john> /homes/john/data/sequences/test1
+    /homes/john/data/sequences/test1
     john> cd 
     john> pwd
-    john> /homes/john
+    /homes/john
     john> cd -
     john> pwd
-    john> /homes/john/data/sequences/test1
+    /homes/john/data/sequences/test1
 
 
 

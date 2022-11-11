@@ -21,10 +21,10 @@ Command **cd** (short for *change directory*)
 In contrast to using the  **relative path** with **..**, which basically means "one directory up from where I am at the moment" you could use the **absolute path**. To do this you could use the command **pwd** to get the current location and remove the last part of the **absolute** bath. 
 
     john> pwd
-    john> /homes/john/data
+    /homes/john/data
     john> cd /homes/john
     john> pwd
-    john> /homes/john
+    /homes/john
 
 
 <p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_3.html">CONTINUE -></a>

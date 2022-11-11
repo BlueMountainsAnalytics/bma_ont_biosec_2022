@@ -8,7 +8,10 @@
 Now that we are able to navigate on the command line the next question is: how do I find out what files are in my directory? 
 To view the content of a directory use the command **ll** (short for long list, i.e., a long version of the default command **ls** = list) which shows one line per file, program or directory in the specified location:
 
-<img src="figures/intro_7.png" height="120px">
+    john> ll
+    total 16
+    drwxr-xr-x  2  john  staff  68  17  Jul  10:32  <span style="color:blue">Files</span>
+
 
 Wow, ok, we can see that there are a lot of things in there. Let’s  take a closer look: first of all we see that the output of **ll** consists of ten columns:
 
