@@ -10,23 +10,32 @@ Command-Line Interface
 
 #### What command tells you your current location on the CLI?
 
-With command **pwd** (short for Print Working DIrectory)
+Command **pwd** (short for *print working directory*)
 
 #### With what command do you change into another directory?
 
-With command **cd** (short for Change Directory)
+Command **cd** (short for *change directory*)
 
 #### Can you think of way to change into the parent directory  other than using the command *cd ..*?
 
-In contrast to using the  **relative path** with **..**, which basically means "one directory up from where I am at the moment" you could use the **absolute path**. To do this you could use the command **pwd* to get the current location and remove the last part of the **absolute** bath. 
+In contrast to using the  **relative path** with **..**, which basically means "one directory up from where I am at the moment" you could use the **absolute path**. To do this you could use the command **pwd** to get the current location and remove the last part of the **absolute** bath. 
 
-For Example, if **pwd** returns */Users/tim/Downloads* then the **absolute path** to go one directory up is */Users/tim*. Hence the command would be **cd /Users/tim**.
+    john> pwd
+    john> /homes/john/data
+    john> cd /homes/john
+    john> pwd
+    john> /homes/john
+
+
+<p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_3.html">CONTINUE -></a>
+</p>
+
 
 ### Self-Check 2
 
 #### How do you list the content of your current directory?
 
-With command **ll* (short for *long list*).
+With command **ll** (short for *long list*).
 
 #### Which column of the **ll** output shows the size of a file ?
 
