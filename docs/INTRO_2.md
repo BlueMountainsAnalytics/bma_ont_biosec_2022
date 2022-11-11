@@ -16,7 +16,7 @@ When working with a command line it is useful to keep in mind that a its purpose
 Let’s start with the location. To see in which directory we are in at the moment we can type the command **pwd** (short for print working directory) which prints out the current location:
 
     john> pwd
-    /Users/john
+    /homes/john
     john>
 
 The command printed our current location, */Users/john* followed by a new line where we can type the next command.
@@ -33,19 +33,32 @@ As you can see in the example above the so called **path** to the current direct
   The default directory a user starts in after the login is also called the <i>home directory</i> of a user. It is usually named after the user (hence the <i>/tim</i> directory).  On Apple systems all home directories are found in the <i>/Users</i> directory. On Unix-based systems such as Ubuntu the home directories are usually located in  <i>/homes</i>.
 </div>
 
-Now that we know where we are lets try to change into another directory. For example, let’s say we know that there is a directory data in our home directory. To change into the data directory we use the command cd (short for change directory) followed by the location of the directory we want to change into. 
+Now that we know where we are lets try to change into another directory. For example, let’s say we know that there is a directory */data* in our home directory. To change into the data directory we use the command **cd** (short for *change directory*) followed by the location of the directory we want to change into. 
 
-<img src="figures/intro_4.png" height="100px">
 
-When we use the **pwd** command to check that we actually changed into the */data* directory the output shows */Users/tim/data* as our new location. This is the absolute path of the directory data. In contrast we only used the relative path for the cd  command. Relative paths are given relative to the current working directory, i.e., the directory you are currently in. Additionally, relative paths do NOT start with a *“/”* but either without a slash or using the notation *“./”* which means “this directory”.
+    john> cd ./data
+    john> pwd
+    /homes/john/data
+    john>
 
-In contrast to relative paths absolute paths specify a directory regardless of the current working directory. This means that we can change into the data directory from anywhere by using its absolute path. Absolute paths ALWAYS start with a *“/”* as they denote the the path from the lowest directory, i.e. root  directory, down to the specified location:
+The **./** before the **data** tells the command-line to look in our current directory. You could also just type **cd data**, however it is good practice to use explicit "in this directory".
 
-<img src="figures/intro_5.png" height="100px"> 
-	
-The last command for navigation on the command line is used to go one directory up into the parent directory of our current location. On the command line the parent directory of any location is specified by  two dots. This means if we are still in */Users/tim/data*  and want to change into the parent directory */Users/tim* we can do so by typing **cd ..**
+When we use the **pwd** command to check that we actually changed into the *data* directory the output shows */homes/john/data* as our new location. This **path** is called the ** absolute path** of the directory data. In contrast we only used the **relative path** for the cd  command, i.e., **./data**. Relative paths are given relative to the current working directory, i.e., the directory we are currently in. Additionally, relative paths do NOT start with a *“/”* but either without a slash or using the **./** notation.
 
-<img src="figures/intro_6.png" height="120px">
+In contrast to relative paths absolute paths specify a directory regardless of the current working directory. This means that we can change into the data directory from anywhere by using its absolute path. Absolute paths ALWAYS start with a **/** which denotes the lowest possible directory on a computer, the **root directory**. So, instead of using the relative paths we could also change into the *./data* directory from anywhere by typing
+
+    john> cd /homes/john/data
+    john> pwd
+    john> /homes/john/data
+    john>
+
+The last command for navigation on the command line is used to go one directory up into the so called **parent directory** of our current location. On the command line the parent directory of any location is specified by two dots. This means if we are still in */homes/john/data* and want to change into the parent directory */Users/tim* we can do so by typing **cd ..**
+
+    john> pwd
+    john> /homes/john/data
+    john> cd ..
+    john> /homes/john
+    john>
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %}
