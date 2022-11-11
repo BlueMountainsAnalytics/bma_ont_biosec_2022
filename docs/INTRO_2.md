@@ -45,7 +45,6 @@ The last command for navigation on the command line is used to go one directory 
   </ol>
 </div>
 [Answers](INTRO_ANS.md#selfcheck1)
-
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_2.html">INTRO3</a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_3.html">CONTINUE -></a>
 </p>
-[GO TO NEXT](INTRO_2.md)
+

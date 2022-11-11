@@ -75,4 +75,4 @@ Thus, a CLI command consists of
 </div>
 [Answers](INTRO_ANS.md#selfcheck2) 
 
-[GOT TO NEXT](CTOOLS.md)
+<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CTOOLS.html">CONTINUE -></a></p>
