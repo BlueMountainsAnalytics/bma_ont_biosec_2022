@@ -29,11 +29,11 @@ As you can see in the example above the so called **path** to the current direct
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  <b>Your <i>home</i> directory</b><newline>
-  The default directory a user starts in after the login is also called the home directory of that user. It is usually named after the user (hence the */tim* directory).  On Apple systems all home directories are found in the */Users* directory. On Unix-based systems such as Ubuntu the home directories are usually located in  */homes*.
+  <b>Your <i>home</i> directory</b><br>
+  The default directory a user starts in after the login is also called the <i>home directory</i> of a user. It is usually named after the user (hence the <i>/tim</i> directory).  On Apple systems all home directories are found in the <i>/Users</i> directory. On Unix-based systems such as Ubuntu the home directories are usually located in  <i>/homes</i>.
 </div>
 
-When we found out where we are we want to know how to change into another directory. For example, let’s say we know that there is a directory data in our home directory. To change into the data directory we use the command cd (short for change directory) followed by the location of the directory we want to change into. 
+Now that we know where we are lets try to change into another directory. For example, let’s say we know that there is a directory data in our home directory. To change into the data directory we use the command cd (short for change directory) followed by the location of the directory we want to change into. 
 
 <img src="figures/intro_4.png" height="100px">
 
