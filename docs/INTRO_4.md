@@ -14,7 +14,7 @@ As you can see in the output of **ll** there is now a new directory called *new_
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  Command *rmdir
+  <b>Command <i>rmdir</i></b>
 
   The command **rmdir** only removes *empy* directories! To remove directories that are not empty one would have to first delete all the files in the directory or use the command **rm** (see below for more on this command(
 </div>
@@ -34,11 +34,11 @@ To remove a directory using the **rm** command we have to add the flag **-r**, w
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  Use rm with care!
+  <b>Use rm with care!</b>
 
   In contrast to the *Move to Recycle Bin* option that can be found on Windows, OSX, or the GUI of linux operating systems like Ubuntu, the command-line does not have a Recycle Bin.
 
-  Files and directories removed with *rm* are gone and can't be recovered!!
+  <b>Files and directories removed with *rm* are gone and can't be recovered!!</b>
 </div>
 
 
@@ -63,7 +63,8 @@ Thus, a CLI command consists of
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %}
-  Self-Check 2
+  <b>Self-Check 2</b>
+
   <ol>
     <li>?How do you list the content of your current directory</li>
     <li>Which column of the ls output shows the size of a file?</li>

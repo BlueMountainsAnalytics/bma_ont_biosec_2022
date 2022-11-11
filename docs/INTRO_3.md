@@ -16,7 +16,7 @@ Wow, ok, we can see that there are a lot of things in there. Let’s  take a clo
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  Explanation of ll output
+  <b>Explanation of ll output</b>
 
   <ol>
     <li>Type, d = directory, - = file</li>

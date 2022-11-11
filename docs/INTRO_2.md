@@ -14,7 +14,7 @@ As you can see in the example above the so called path to the current working di
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  Your <b>home</b> directory
+  <b>Your <i>home</i> directory</b>
 
   The default directory a user starts in after the login is also called the home directory of that user. It is usually named after the user (hence the */tim* directory).  On Apple systems all home directories are found in the */Users* directory. On Unix-based systems such as Ubuntu the home directories are usually located in  */homes*.
 </div>
@@ -35,7 +35,8 @@ The last command for navigation on the command line is used to go one directory 
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %}
-  Self-Check 1
+  <b>Self-Check 1</b>
+
   <ol>
     <li>What does CLI stand for?</li>
     <li>What command tells you your current location on the CLI?</li>
