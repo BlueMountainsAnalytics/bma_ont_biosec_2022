@@ -29,8 +29,7 @@ As you can see in the example above the so called **path** to the current direct
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  <b>Your <i>home</i> directory</b>
-
+  <b>Your <i>home</i> directory</b><newline>
   The default directory a user starts in after the login is also called the home directory of that user. It is usually named after the user (hence the */tim* directory).  On Apple systems all home directories are found in the */Users* directory. On Unix-based systems such as Ubuntu the home directories are usually located in  */homes*.
 </div>
 
