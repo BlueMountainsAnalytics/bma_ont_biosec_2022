@@ -21,11 +21,11 @@ Let’s start with the location. To see in which directory we are in at the mome
 
 The command printed our current location, */Users/john* followed by a new line where we can type the next command.
 
-On my laptop the same command will look like this:
+On my laptop the same command output looks like this:
 
 <img src="figures/intro_3.png" height="140px">
 
-As you can see in the example above the so called **path** to the current directory is */Users/tim*. The *‘/’* symbol in a path denote a directories: thus */Users/tim* indicates that we are in directory */tim* which is a subdirectory of directory */Users*.
+As you can see in the example above the so called **path** to the current directory is */Users/tim*. The */* symbols in a path denote a directory: thus */Users/tim* indicates that we are in directory */tim* which is a subdirectory of directory */Users*.
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
@@ -43,22 +43,52 @@ Now that we know where we are lets try to change into another directory. For exa
 
 The **./** before the **data** tells the command-line to look in our current directory. You could also just type **cd data**, however it is good practice to use explicit "in this directory".
 
-When we use the **pwd** command to check that we actually changed into the *data* directory the output shows */homes/john/data* as our new location. This **path** is called the ** absolute path** of the directory data. In contrast we only used the **relative path** for the cd  command, i.e., **./data**. Relative paths are given relative to the current working directory, i.e., the directory we are currently in. Additionally, relative paths do NOT start with a *“/”* but either without a slash or using the **./** notation.
+When we use the **pwd** command to check that we actually changed into the *data* directory the output shows */homes/john/data* as our new location. This **path** is called the **absolute path** of the *data* directory. In contrast we only used the **relative path** for the cd  command, i.e., **./data**. Relative paths are given relative to the current working directory, i.e., the directory we are currently in. Additionally, relative paths do NOT start with a *“/”* but either without a slash or using the **./** notation.
 
-In contrast to relative paths absolute paths specify a directory regardless of the current working directory. This means that we can change into the data directory from anywhere by using its absolute path. Absolute paths ALWAYS start with a **/** which denotes the lowest possible directory on a computer, the **root directory**. So, instead of using the relative paths we could also change into the *./data* directory from anywhere by typing
+In contrast to relative paths **absolute paths** specify a directory regardless of the current working directory. This means that we can change into the *./data* directory from anywhere by using its absolute path. Absolute paths ALWAYS start with a **/** which denotes the lowest possible directory on a computer, the **root directory**. So, instead of using the relative path we could also change into the *./data* directory from anywhere by typing
 
     john> cd /homes/john/data
     john> pwd
     john> /homes/john/data
     john>
 
-The last command for navigation on the command line is used to go one directory up into the so called **parent directory** of our current location. On the command line the parent directory of any location is specified by two dots. This means if we are still in */homes/john/data* and want to change into the parent directory */Users/tim* we can do so by typing **cd ..**
+However, typing the absolute path whenever you want to change into a directory can be tedious, hence the **./** notation for relative paths. There are three more special ways of how to use the **cd** command:
+
+  <ol>
+    <li>cd ..</li>
+    <li>cd</li>
+    <li>cd -</li>
+  <ol>
+
+The first one, **cd ..** uses the dot-notation to change into the directory above this one, the so called **parent directory**, without having to type the absolute path:
 
     john> pwd
     john> /homes/john/data
     john> cd ..
+    john> pwd
     john> /homes/john
-    john>
+
+The second one, the **cd** command on its own, will always change into the users home directory, regardless of our current location:
+
+    john> pwd
+    john> /homes/john/data/sequences/test1/
+    john> cd
+    john> pwd
+    john> /homes/john
+
+The third command, **cd -** will change back to the directory we just came from:
+
+    john> pwd
+    john> /homes/john/data/sequences/test1
+    john> cd 
+    john> pwd
+    john> /homes/john
+    john> cd -
+    john> pwd
+    john> /homes/john/data/sequences/test1
+
+
+
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %}
