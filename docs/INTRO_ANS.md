@@ -69,7 +69,7 @@ Flags...
 
 Use the command **head** with the **-n** flag to specify the number of lines the command should print
 
-    tim$ head -n 5 FILE_NAME
+    john> head -n 5 FILE_NAME
 
 <p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_4.html">CONTINUE =></a>
 </p>
