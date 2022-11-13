@@ -4,7 +4,7 @@
 
 ## Commands, arguments, and flags
 
-We have already used several different command line commands, e.g. **pwd** and **cd**. The difference between these two commands is that **pwd** is run without anything whereas **cd** can have additional, e.g. the name of the directory which we want to change into. Many different command line commands expect arguments, e.g. the command **mkdir** (short for make directory) can be used to create a new directory. It expects the *name of the new directory* as an argument:
+We have already used several different command line commands, e.g. **pwd** and **cd**. The difference between these two commands is that **pwd** is run without anything whereas **cd** can have additional, e.g. the name of the directory which we want to change into. Many different command line commands expect arguments, e.g. the command **mkdir** (short for *make directory*) can be used to create a new directory. It expects the *name of the new directory* as an argument:
 
 
     john> ll
@@ -22,7 +22,7 @@ We have already used several different command line commands, e.g. **pwd** and *
     -rw-r--r--  1  john  staff  152  17  Jul  10:32  sequences.fasta
     -rw-r--r--  1  john  staff 1551  17  Jul  10:32  to-do.txt
    
-As you can see in the output of **ll** there is now a new directory called *new_directory*. Similarly, we can remove a directory with the command **rmdir** (short for remove directory) and give *the name of the directory to remove* as an argument:
+As you can see in the output of **ll** there is now a new directory called *new_directory*. Similarly, we can remove a directory with the command **rmdir** (short for *remove directory*) and give *the name of the directory to remove* as an argument:
 
     john> ll
     drwxr-xr-x  2  john  staff   68  17  Jul  10:32  Files
@@ -42,12 +42,12 @@ As you can see in the output of **ll** there is now a new directory called *new_
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
   <b>Command <i>rmdir</i></b><br>
-  The command <b>rmdir</b> only removes *empy* directories! To remove directories that are not empty one would have to first delete all the files in the directory or use the command <b>rm</b> (see below for more on this command(
+  The command <b>rmdir</b> only removes <i>empty</i> directories! To remove directories that are not empty one would have to first delete all the files in the directory or use the command <b>rm</b> (see below for more on this command)
 </div>
 
 Besides arguments the behavior of many commands can be altered by calling them with specific options, also called *flags*. In contrast to arguments, flags start with one or sometimes two hyphens. For example, to remove a file we can use the command **rm**, which expects as argument the relative or absolute path to the file that should be removed. To remove the file *sequences.fasta* in our directory we can type
 
-    john> rm ./sequences.fastia
+    john> rm ./sequences.fasta
     john> ll
     drwxr-xr-x  2  john  staff   68  17  Jul  10:32  Files
     drwxr-xr-x  2  john  staff   68   2  Oct   2020  Workshops
@@ -55,12 +55,12 @@ Besides arguments the behavior of many commands can be altered by calling them w
     drwxr-xr-x  2  john  staff   68  30  Nov  11:13  new_directory
     -rw-r--r--  1  john  staff 1551  17  Jul  10:32  to-do.txt
 
-However, if we try to remove a directory using this command we will get a notice that *Files is a directory*: 
+However, if we try to remove a directory, e.g., the directory *./Files*, we will get a notice that *Files is a directory*: 
 
     john> rm ./Files
     rm: Files/: is a directory
 
-To remove a directory using the **rm** command we have to add the flag **-r**, which stands for *recursive*. This will first remove all the contens of the directoy *recursively*, i.e., one after the other, and then delete the directory itself:
+To remove a directory using the **rm** command we have to add the flag **-r**, which stands for *recursive*. This will first remove all the contents of the directory *recursively*, i.e., one after the other, and then delete the directory itself:
 
     john> rm -r ./Files
     john> ll
@@ -73,7 +73,7 @@ To remove a directory using the **rm** command we have to add the flag **-r**, w
   {% octicon info height:32 class:"right left" aria-label:hi %}
   <b>Use rm with care!</b><br>
   In contrast to the <i>Move to Recycle Bin</i> option that can be found on Windows, OSX, or the GUI of linux operating systems like Ubuntu, the command-line does not have a Recycle Bin.<br>
-  <b><u>Files and directories removed with *rm* are gone and can't be recovered!!</u></b>
+  <b><u>Files and directories removed with <i>rm</i> are gone and can't be recovered!!</u></b>
 </div>
 
 
@@ -122,6 +122,6 @@ Thus, a CLI command consists of
     <li>How do you list the first 5 lines of a file?</li>
   </ol>
 </div>
-[Answers](INTRO_ANS.md#selfcheck2) 
+[Answers](INTRO_ANS.md#self-check-2) 
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CTOOLS.html">CONTINUE -></a></p>

@@ -62,9 +62,9 @@ With this knowledge we can now properly interpret the output of ll of our curren
 
   <ul>
     <li>It contains 3 directories: <i>Files</i>, <i>Workshops</i>, and <i>meeting_notest</i></li>
-    <li>It contains 2 files: <i>sequence.fasta</i>, and <i>to-do.txt</i</li>
+    <li>It contains 2 files: <i>sequence.fasta</i>, and <i>to-do.txt</i></li>
     <li>All files were created by me  (user <i>tim</i>)</li>
-    <li>The file <i>sequences.fasta</i>  is 251 bytes and file <i>to-do.txt</i> is of size 1551 bytes</li>
+    <li>The file <i>sequences.fasta</i> is 251 bytes and file <i>to-do.txt</i> is of size 1551 bytes</li>
   </ul>
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_4.html">CONTINUE -></a></p>
