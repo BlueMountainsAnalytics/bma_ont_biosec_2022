@@ -55,7 +55,7 @@ Example using *absolute paths*:
 
 This will create the new directory *my_new_directory* in the directory */Users/tim*
 
-#### How to you add a **flag** to a command?
+#### How do you add a **flag** to a command?
 
 Flags... 
 
