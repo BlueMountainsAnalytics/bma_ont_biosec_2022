@@ -1,10 +1,10 @@
-# CondaHow-To 
+# Conda How-To 
 
 [{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](CONDA_2.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](CONDA_4.md)
 
 ## Introduction to Conda
 
-Conda is a package manager that automates the installation of scripts, packges and dependencies in a user-friendly way. IT uses the concept of *environments* that are independent and don't interact with each other, limiting the possibility of dependency or package conflicts.
+Conda is a package manager that automates the installation of scripts, packages and dependencies in a user-friendly way. IT uses the concept of *environments* that are independent and don't interact with each other, limiting the possibility of dependency or package conflicts.
 
 A usual conda workflow looks like this:
   <ul>
@@ -12,7 +12,7 @@ A usual conda workflow looks like this:
     <li>Activate the new environment</li>
     <li>Install tools, packages, and dependencies</li>
     <li>Use the tools installed in the environment</li>
-    <li>De-activate the environment<li>
+    <li>De-activate the environment<i/li>
   </ul>
 
 Once a conda environment was created it can be activate or de-activate as many times as you want. The tools etc installed inside the environment won't disappear, e.g., when you re-start the computer or log out.

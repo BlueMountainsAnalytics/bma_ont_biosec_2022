@@ -48,15 +48,15 @@ Next, we will need to run the installer on the command line simply by typing the
     Please, press ENTER to continue
     >>> 
 
-When you come to the *License Agreement* you will ahve to press *Space* several times until you are at the end of the agreement. When asked if you agree (and in case you do) type *yes* and press enter
+When you come to the *License Agreement* you will have to press *Space* several times until you are at the end of the agreement. When asked if you agree (and in case you do) type *yes* and press enter
 
     Do you accept the license terms? [yes|no]
     [no] >>> yes
 
-When you're asked about the installation path just got with the default unless you know what you're going and simply press Enter which will start the installtion.
-When asked if you want to *run conda init* type *yes* and press Enter again. Now conda should be installed.
+When you're asked about the installation path just go with the default unless you know what you're doing, i.e., simply press Enter which will start the installtion.
+When asked if you want to *run conda init* type *yes* and press Enter again. Now conda should be ready to use.
 
-If you knwo type *conda --version* you should see the version of the installed conda on the command-line
+If you now type *conda --version* you should see the conda version printed to the command-line
 
     john> conda --version
     conda 4.14.4
