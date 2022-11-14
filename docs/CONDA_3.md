@@ -12,7 +12,7 @@ A usual conda workflow looks like this:
     <li>Activate the new environment</li>
     <li>Install tools, packages, and dependencies</li>
     <li>Use the tools installed in the environment</li>
-    <li>De-activate the environment<i/li>
+    <li>De-activate the environment</li>
   </ul>
 
 Once a conda environment was created it can be activate or de-activate as many times as you want. The tools etc installed inside the environment won't disappear, e.g., when you re-start the computer or log out.
