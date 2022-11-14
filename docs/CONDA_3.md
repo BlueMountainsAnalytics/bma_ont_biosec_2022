@@ -15,7 +15,7 @@ A usual conda workflow looks like this:
     <li>De-activate the environment</li>
   </ul>
 
-Once a conda environment was created it can be activate or de-activate as many times as you want. The tools etc installed inside the environment won't disappear, e.g., when you re-start the computer or log out.
+Once a conda environment was created it can be activated or de-activated as many times as you want. The tools etc. installed inside the environment won't disappear, e.g., when you re-start the computer or log out.
 
 
 ### Create a new Conda environment
@@ -59,24 +59,32 @@ You should see the following output ...
 
 Finished. We now have a new conda environment called *ont_test*.
 
-To list all conda environments use the command **conda env list**. If the only environment on oyur system was the one we just installed you would see an output similar to this:
+To list all conda environments use the command **conda env list**. If the only environment on your system was the one we just installed you would see an output similar to this:
 
     # conda environments:
     #
     base                  *  /home/john/miniconda3
     ont_test              *  /home/john/miniconda3/ont_test
 
-There it is, in */home/john/miniconda3/ont_test*.
+There it is, in */home/john/miniconda3/ont_test*. However, on your AWS instance you will see several other environments in addition to the one you just created, but ignore these for the moment.
 
 To remove the environment, all one would have to do is to remove the directory using **rm -r**
 
     john> rm -r /home/john/miniconda3/ont_test
+
+If we now list the existing conda environments the only one left would be Conda's base environment
+
     john> conda env list
 
     # conda environments:
     #
     base                  *  /home/john/miniconda3
 
+
+<div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
+  {% octicon info height:32 class:"right left" aria-label:hi %}
+  If you just removed the ont_test environment to check that it really disappears then please re-create it again. We will need it in the next section.
+</div>
 
 
 ## Activate a conda environment
@@ -99,9 +107,11 @@ To get out of the environment we can use the conda command **deactivate**
 
 Now that we set up a new clean conda environment we need to install something in it. 
 
-Conda packages can be installed from various so called *channels*. For example, the channel *bioconda* provides packages related to the biomedical research space including packages and tools for Oxford Nanopore data processing. One of these tools is the tools *porechop*, which finds and removes sequencing adapters from Oxford Nanopore reads. 
+Conda packages can be installed from various so called *channels*. For example, the channel *bioconda* provides packages related to the biomedical research space including packages and tools for Oxford Nanopore data processing. One of these tools is  *porechop*, a tool to find and remove sequencing adapters from Oxford Nanopore reads. 
 
-To install something using conda we use the command **conda install PACKAGE_NAME** where *PACKAGE_NAME* is the name of the tool/package we want to install. To specify a particular *channel* the tool can be found on we use the **-c** flag followed by the channel name. *Also, don't forget to activate your conda environment first!* 
+To install something using conda we use the command **conda install PACKAGE_NAME** where *PACKAGE_NAME* is the name of the tool/package we want to install. To specify a particular *channel* the tool can be found on we use the **-c** flag followed by the channel name. 
+
+Let's activate our ont_test environment and install the tool *porechop* from channel *bioconda* in it:
 
     john> conda activate ont_test
     (ont_test) john> conda install -c bioconda porechop
@@ -198,6 +208,13 @@ Once Conda is done with the installation activate the environment *ont_test2* an
     (ont_test2) john> porechop --version
     0.2.4
 
+
+<div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
+  {% octicon info height:32 class:"right left" aria-label:hi %}
+  <br><b>Tip</b><br>
+  You can also install packages in already existing environments without activating it suing the <b>conda install</b> command but specifying the name of the environment you want to install the package into using the <b>--name</b> flag: <br><i>conda install --name ENV_NAME PACKAGE_NAME</i> 
+</div>
+
 Great. Now you have a good basis to work with Conda environments
 
 
@@ -206,8 +223,8 @@ Great. Now you have a good basis to work with Conda environments
   <ol>
     <li>How do you list all conda environments already installed?</li>
     <li>How would you activate a the conda environment <i>anu_course</i>?</li>
-    <li>What command would you use if you wanted to install the tool <i>jellybean</i> from channel <i>conda-forge</i>?<\li>
-    <li>If you deactivate the environment ont_test2 and check the version of porechop, what wll you see? Why?</li>
+    <li>What command would you use if you wanted to install the tool <i>jellybean</i> from channel <i>conda-forge</i>?</li>
+    <li>If you deactivate the environment ont_test2 and check the version of porechop, what will you see? Why?</li>
   </ol>
 
 [Answers](CONDA_ANS.md)

@@ -28,7 +28,7 @@ Once the installation is done you can use the mamba environment exactly like a c
 
 The main difference is that Mamba is often faster and more reliable than Conda.
 
-Now we're finally ready to do some Bioinformatics!
+Congratulations, you are finally ready to do some Bioinformatics ... but maybe get a tea and a cookie first :)
 
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/QC.html">CONTINUE -></a>
