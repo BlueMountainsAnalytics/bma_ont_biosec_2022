@@ -42,13 +42,13 @@ For example, if your user name was **user1** and the IP address of the remote li
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
-  <b>Non-default ssh port</b>
+  <b>Non-default ssh port</b><br>
   Usually, the ssh command does not require you to specify the <i>port</i> to use because the default port (22) is automatically added to the ssh command if it's not changed. However, in some cases a non-default port has to be specified for security reasons. In that case you will be provided with the specific port with your login details. The port will have to be added with the <b>-p</b> flag, e.g. <b>ssh -p 12345 user1@111.222.333.444</b>
 </div>
 
 If you connect to remote computer for the first time you will be asked to add the remote ssh-key to your system (type *yes* and press Enter).
 
-Type in your password once you are asked for it.**You won't see any character when typing your password!**. This does not mean that something is wrong. This is a security mechanism, i.e., you will have to type your password "blind".
+Type in your password once you are asked for it. **You won't see any character when typing your password!**. This does not mean that something is wrong. This is a security mechanism, i.e., you will have to type your password "blind".
 
 Once you pressed *Enter* (and given the password/port are correct) your terminal will now be connected to the remote machine and you are ready to go.
 
@@ -93,7 +93,7 @@ These will be provided to you during the course.
 To connect to a remote computer
 
   <ol>
-    <li>Douber-click the **MobaXTerm_Personal_22.1.exe** you jsut compied to your Desktop</li>
+    <li>Douber-click the <i>MobaXTerm_Personal_22.1.exe</i> you just compied to your Desktop</li>
     <li>On the MobaXTerm GUI click <b>Session</b> in the upper-left corner</li>
     <li>Click <b>SSH</b> on the next screen</li>
     <li>Fill in the IP address in the <b>Remote host</b> field</li>
