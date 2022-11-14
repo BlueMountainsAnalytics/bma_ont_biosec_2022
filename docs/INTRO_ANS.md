@@ -27,7 +27,7 @@ In contrast to using the  **relative path** with **..**, which basically means "
     /homes/john
 
 
-<p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_3.html">CONTINUE =></a>
+<p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_3.html">BACK =></a>
 </p>
 
 
@@ -71,5 +71,5 @@ Use the command **head** with the **-n** flag to specify the number of lines the
 
     john> head -n 5 FILE_NAME
 
-<p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_4.html">CONTINUE =></a>
+<p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_4.html">BACK =></a>
 </p>
