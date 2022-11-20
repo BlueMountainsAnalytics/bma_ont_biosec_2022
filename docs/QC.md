@@ -10,5 +10,5 @@ An increasing number of tools is available for sequence data QC and filtering, w
 
 **Data directory:** *~/course_data/practicals/qc_practical*
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/QC_P.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/QC_N.html">CONTINUE -></a>
 </p>

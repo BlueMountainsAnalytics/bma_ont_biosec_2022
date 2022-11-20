@@ -13,7 +13,7 @@ The general workflow of long-read whole genome sequence analysis can sometimes b
 
 ## VirtualBox
 
-For Windows users we provide a virtual machine based on Ubuntu 20.04 which can be downloaded [here](). Installation instructions on how to set it up can be found [here]()
+For Windows users we provide a virtual machine based on Ubuntu 20.04 which can be downloaded [here](). Installation instructions on how to set it up can be found [here](VM.md)
 
 ## Data availability
 
