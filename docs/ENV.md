@@ -35,9 +35,3 @@ A complete list of the tools, dependencies, and links to the data and conda envi
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/VM.html">CONTINUE -></a>
 </p>
-
-~                                                                                                                                                                                              
-~                                                                                                                                                                                              
-~                                                                                                                                                                                              
-~                                                                                                                                                                                              
-~                             
