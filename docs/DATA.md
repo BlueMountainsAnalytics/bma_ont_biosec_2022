@@ -8,6 +8,26 @@
 * [Assembler-Stats](https://github.com/sanger-pathogens/assembly-stats)
 * [BASTA](https://github.com/timkahlke/BASTA)
 * [Mummer](https://github.com/mummer4/mummer)
+* [Samtools](http://www.htslib.org/)
+* [Bedtools](https://bedtools.readthedocs.io/en/latest/)
+
+## Conda environment file
+
+A conda *environment.yml* file to build the course environment and install all tools into it can be found [here]().
+
+To create the environment use
+
+    course_user> conda env create -f environment.yaml
+
+After the installation is finished activate the environment using 
+
+    course_user> conda activate biosec_course
+
+## Course data
+
+All course data will be provided with the VirtualBox image. However, a zipped version of the course data and directory structure can be found [here]().
+
+Download and extract the data into your home directory.
 
 ## Dependencies
 
@@ -78,25 +98,6 @@ If you now type *conda --version* you should see the conda version printed to th
     conda 4.14.4
 
 Conda can now be used on your system.
-
-### Conda environment file
-
-A conda *environment.yml* file to build the course environment and install all tools into it can be found [here]().
-
-To create the environment use
-
-    course_user> conda env create -f environment.yaml
-
-After the installation is finished activate the environment using 
-
-    course_user> conda activate biosec_course
-
-
-## Course data
-
-All course data will be provided with the VirtualBox image. However, a zipped version of the course data and directory structure can be found [here]().
-
-Download and extract the data into your home directory.
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_1.html">CONTINUE -></a>
 </p>

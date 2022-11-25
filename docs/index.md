@@ -4,8 +4,7 @@ These github pages provide bioinformatics course material for the course [Nanopo
 at the 28th-30th of November at the Australian National University.
 
 ## Content
- * [Course Overview](OVER.md)
- * [Course environment](ENV.md)
+ * [Course Overview](ENV.md)
    * [VirtualBox installation](VM.md)
    * [Tools, dependencies and course data](DATA.md))
  * [Introduction to the Command-line Interface](INTRO_1.md)
