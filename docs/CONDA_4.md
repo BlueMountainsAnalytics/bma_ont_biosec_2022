@@ -13,18 +13,18 @@ Mamba is a re-implementation, i.e., a re-write, of the Conda package manager usi
 
 To get Mamba we simply install it into the *base* environment of our existing conda installation using the following command
 
-    john> conda  install mamba --name base -c conda-forge
+    course_user> conda  install mamba --name base -c conda-forge
 
 Once the installation is finished let's create another conda environment *ont_mamba* and install *python 3.10* and *porechop* into it. However, this time we use the command *mamba* instead of *conda*
 
-    john> mamba create --name ont_mamba python==3.10 porechop
+    course_user> mamba create --name ont_mamba python==3.10 porechop
 
 Follow the installation process on the screen, press Enter when asked to proceed.
 
 Once the installation is done you can use the mamba environment exactly like a conda environment. You can even activate it using conda
 
-    john> conda activate ont_mamba
-    (ont_mamba) john>
+    course_user> conda activate ont_mamba
+    (ont_mamba) course_user>
 
 The main difference is that Mamba is often faster and more reliable than Conda.
 

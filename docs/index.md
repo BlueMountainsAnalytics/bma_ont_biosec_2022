@@ -1,27 +1,35 @@
-# Introduction to the Command-Line Interface (CLI)
+# Nanopore sequencing for biosecurity
 
-This page provides a basic primer to the use of command-line interfaces such as Ubuntu or MACOS terminal.
+These github pages provide bioinformatics course material for the course [Nanopore sequencing for biosecurity](https://cba.anu.edu.au/news-events/events/nanopore-sequencing-biosecurity) given
+at the 28th-30th of November at the Australian National University.
 
 ## Content
- * Introduction
-   * [What is a CLI?](INTRO_1.md)
+ * [Course Overview](OVER.md)
+ * [Course environment](ENV.md)
+   * [VirtualBox installation](VM.md)
+   * [Tools, dependencies and course data](DATA.md))
+ * [Introduction to the Command-line Interface](INTRO_1.md)
    * [Navigation](INTRO_2.md)
    * [Files and Directories](INTRO_3.md)
    * [Commands, arguments, and flags](INTRO_4.md)
- * [CLI tools](CTOOLS.md)
- * [Introduction to Conda and Mamba](CONDA_1.md)
+ * [Introduction to package manager](CONDA_1.md)
    * [Installing Conda](CONDA_2.md)
    * [Conda How-To](CONDA_3.md)
    * [Mamba ... the better snake?](Conda_4.md)
- * [Overview](OVER_1.md)
+ * [Long-Read data analysis workflow](OVER_1.md)
  * [Quality Control](QC.md)
    * [Quality Control using NanoPlot](QC_N.md)
    * [Read filtering using NanoFilt](QC_F.md)
+ * [Genome Assembly](ASS.md)
+   * [Minimap-Miniasm pipeline](ASS_M.md)
+   * [Flye](ASS_F.md)
+   * [Error correction using Medaka](ERR_M.md)
+   * [Completeness analysis using BUSCO](BUSC.md)
+ * [Basic ITS analysis](ITS.md)
  * APPENDIX
    * [CLI - Self-Check Answers](INTRO-ANS.md)
    * [CLI Cheat Sheet](CLI-CS.md)
    * [Conda - Self-Check Answers](CONDA-ANS.md)
    * [Conda / Mamba Cheat Sheet](CON-CS.md)
-   * [VM install](VM.md)
    * [QC Answers](QC_ANS.md)
 

@@ -1,14 +1,18 @@
 # VirtualBox
 
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](ENV.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](DATA.md)
+
 VirtualBox is a free software tool that lets you load so called virtual machines on your computer. A virtual machine like a small pre-configured operating system that you can simply run in a window on your desktop computer or laptop. For example, if you have windows installed on your computer and a virtual machine with linux installed on it you can run this linux on your windows computer in a window just like your internet browser or any other app.
 
 ## Download VirtualBox
 
-VirtualBox can be downloaded from the official [homepage](http://www.virtualbox.org). Click on the big "VirtualBox 7.0 button.
+VirtualBox can be downloaded from the official [homepage](http://www.virtualbox.org). Click on the big "VirtualBox 7.0 button".
 
 For Windows computers click on the “Windows hosts” in section **VirtualBox 7.0.2**.
 
-For older / non-M1 MacBooks or other Apple computers select "macOS/Intel hosts". For new M1 macs use "Developer preview for macOS / Arm64 (M1/M2) hosts"
+For older / non-M1 MacBooks or other Apple computers select "macOS/Intel hosts". 
+
+**New M1/M2 Macs are not supported!!** The *Developer preview for macOS / Arm64 (M1/M2) hosts* is **NOT** a working VirtualBox version and will not install on your systems.
 
 Save the installer in a location of your choice.
 
@@ -43,4 +47,5 @@ Follow the instructions and continue the installation process until it is finish
 
 Congratulations, you just installed VirtualBox. To start the software double click the VirtualBox.app in your Applications folder.
 
-
+<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/DATA.html">CONTINUE -></a>
+</p>

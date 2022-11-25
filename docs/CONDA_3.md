@@ -24,11 +24,11 @@ To create a new environment use the command *conda create* plus the **--name** f
 
 Let's create a new environment called ont_test.
 
-    john> conda create --name ont_test
+    course_user> conda create --name ont_test
 
 You should see the following output ...
 
-    john> conda create --name ont_test
+    course_user> conda create --name ont_test
     Collecting package metadata (current_repodata.json): done
     Solving environment: done
 
@@ -37,7 +37,7 @@ You should see the following output ...
 
     ## Package Plan ##
 
-    environment location: /home/john/miniconda3/envs/ont_test
+    environment location: /home/course_user/miniconda3/envs/ont_test
 
 
 
@@ -63,22 +63,22 @@ To list all conda environments use the command **conda env list**. If the only e
 
     # conda environments:
     #
-    base                  *  /home/john/miniconda3
-    ont_test              *  /home/john/miniconda3/ont_test
+    base                  *  /home/course_user/miniconda3
+    ont_test              *  /home/course_user/miniconda3/ont_test
 
-There it is, in */home/john/miniconda3/ont_test*. However, on your AWS instance you will see several other environments in addition to the one you just created, but ignore these for the moment.
+There it is, in */home/course_user/miniconda3/ont_test*. However, on your AWS instance you will see several other environments in addition to the one you just created, but ignore these for the moment.
 
 To remove the environment, all one would have to do is to remove the directory using **rm -r**
 
-    john> rm -r /home/john/miniconda3/ont_test
+    course_user> rm -r /home/course_user/miniconda3/ont_test
 
 If we now list the existing conda environments the only one left would be Conda's base environment
 
-    john> conda env list
+    course_user> conda env list
 
     # conda environments:
     #
-    base                  *  /home/john/miniconda3
+    base                  *  /home/course_user/miniconda3
 
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
@@ -91,16 +91,16 @@ If we now list the existing conda environments the only one left would be Conda'
 
 Now that we have created our new environment we want to be able to use it. To use a conda environment one has to **activate** it, using the **conda activate** command followed by the name of the environment:
 
-    john> conda activate ont_test
-    (ont_test) john>
+    course_user> conda activate ont_test
+    (ont_test) course_user>
 
 As you can see, after activating the *ont_test* environment, the command-line adds the name of the environment in brackets to our prompt. This shows us that we're inside the conda environment and can start to use it.
 
 
 To get out of the environment we can use the conda command **deactivate**
 
-    (ont_test) john> conda deactivate
-    john> 
+    (ont_test) course_user> conda deactivate
+    course_user> 
 
 
 ## Installing packages using conda
@@ -113,8 +113,8 @@ To install something using conda we use the command **conda install PACKAGE_NAME
 
 Let's activate our ont_test environment and install the tool *porechop* from channel *bioconda* in it:
 
-    john> conda activate ont_test
-    (ont_test) john> conda install -c bioconda porechop
+    course_user> conda activate ont_test
+    (ont_test) course_user> conda install -c bioconda porechop
 
 Once you've hit Enter you will see the *Collecting package metadata* and *Solving environment* messages of conda, followed by a list of packages and dependencies conda will install. Hit Enter again to proceed with the installation process.
 
@@ -123,7 +123,7 @@ Once you've hit Enter you will see the *Collecting package metadata* and *Solvin
 
     ## Package Plan ##
 
-      environment location: /home/john/miniconda3/envs/ont_test
+      environment location: /home/course_user/miniconda3/envs/ont_test
 
       added / updated specs:
         - porechop
@@ -181,7 +181,7 @@ Once you've hit Enter you will see the *Collecting package metadata* and *Solvin
 
 Done! Now *porechop* is installed in your conda environment. To check that everything went well check the porechop version
 
-    (ont_test) john> porechop --version
+    (ont_test) course_user> porechop --version
     0.2.0
 
 
@@ -198,14 +198,14 @@ The following command will
     <li>Install the tool <i>porechop</i> into the environment</li>
   </ul>
 
-    john> conda create --name ont_test2 python==3.6 porechop
+    course_user> conda create --name ont_test2 python==3.6 porechop
 
 Once Conda is done with the installation activate the environment *ont_test2* and check the version of python and porechop
 
-    john> conda activate ont_test2
-    (ont_test2) john> python --version
+    course_user> conda activate ont_test2
+    (ont_test2) course_user> python --version
     3.6.0
-    (ont_test2) john> porechop --version
+    (ont_test2) course_user> porechop --version
     0.2.4
 
 
@@ -216,6 +216,26 @@ Once Conda is done with the installation activate the environment *ont_test2* an
 </div>
 
 Great. Now you have a good basis to work with Conda environments
+
+## Sharing Conda environments
+
+Conda environments can also be shared. To do so one has to create a specific file, an *environment.yaml* file outlining the name of the environment, dependencies and tools to be installed. 
+
+For example the environment.yaml file for this course looks something like this:
+
+    name: biosec_course
+    channels: 
+      - bioconda
+    dependencies:
+      - minimap
+      - miniasm
+      - flye
+      - assembly-stats
+    ...
+
+To create a conda environment from scratch one would have to specify the environment.yaml with the *-f* flag, e.g.:
+
+    course_user> conda env create -f environment.yaml
 
 
 ## Conda Self-Check

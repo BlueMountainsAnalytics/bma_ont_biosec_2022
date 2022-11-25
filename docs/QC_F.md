@@ -1,12 +1,12 @@
 # Read Filtering using NanoFilt
 
-[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](QC_N.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}]()
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](QC_N.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](ASS.md)
 
 After assessing the quality of a sequncing run one usually wants to remove low-quality reads or short reads. That said, usually, the basecaller already eprformed some kind of quality fitlering.
 
 In the directory *qc_practical/fastq_file* is the fastq file of all the reads the basecaller produced in the sequencing run we just analysed. In the directory *qc_practical* create another directory, e.g. *example_2*. Call NanoPlot again but this time using the fastq file instead of the summary file using the *--fastq* flag and the output directory *example_2*.
 
-    course_user> cd ~/course_data/practicals/qc_practical
+    course_user> cd ~/biosec_course/practicals/qc_practical
     course_user> mkdir example_2
     course_user> NanoPlot --fastq ./fastq_file/fastq_runid_2.fastq -o ./example_2
  
@@ -66,5 +66,5 @@ To see a little more ab out the effect of the filtering create a last directory,
 Open the *Nanoplot-report.html* file and have a look at the read length and how filtering affected the overall quality of the sequencing output.
 
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/ASS.html">CONTINUE -></a>
 </p>

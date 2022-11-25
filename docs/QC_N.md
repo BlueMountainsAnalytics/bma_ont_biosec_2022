@@ -8,7 +8,7 @@ Given an input file and a location where to store the output files NanoPlot will
 
 Change into the *qc_practicals* directory and create a directory for the nanoplot output, e.g. *example_1*:
 
-    course_user> cd ~/course_data/practicals/qc_practical
+    course_user> cd ~/biosec_course/practicals/qc_practical
     course_user> mkdir example_1
 
 In the *qc_practical* directory you will also see *summary_files* directory with an example summary file in it.  Change into the directory and use the command **head** to show the content of the summary file.
@@ -19,7 +19,7 @@ In the *qc_practical* directory you will also see *summary_files* directory with
 As you can see the sequencing_summary file is a tab-separated file with one read/sequence per line and a number of statistics of each read.
 
 
-Now, use Nanoplot to create a summary of all the sequences in this run. First, change back into the *~/course_data/practicals/qc_practical directory*. Then call NanoPlot, specify that it is a summary file you want to use as input using the flag *--summary*, and give the *example_1* directory as the output directory with the *-o* flag:
+Now, use Nanoplot to create a summary of all the sequences in this run. First, change back into the *~/biosec_course/practicals/qc_practical directory*. Then call NanoPlot, specify that it is a summary file you want to use as input using the flag *--summary*, and give the *example_1* directory as the output directory with the *-o* flag:
 
     course_user> NanoPlot --summary ./summary_files/sequencing_summary.txt -o ./example_1
 
