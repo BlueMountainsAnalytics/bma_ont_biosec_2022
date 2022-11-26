@@ -5,15 +5,17 @@
 The minimap2-miniasm pipeline is an incredibly fast and memory efficient way of assembling Long-Read data. However, it has several characteristics that differ from other assemblers:
 
  1. Miniasm outputs *unitigs* not *contigs*. Unitigs are *unique* parts in the assembly graph. This means all reads in your data "agree" on this part of the assembly. One could say they are high-confidence contigs. In contrast, *contigs* may include regions with ambiguous read information, depending on the algorithm used. As a result unitigs can be shorter and the miniasm assemblies more fragmented
- 2. Miniasm does not build a consensus sequence of the assembly. Thus, the error rate of the resulting unitigs is approximately the same as the error rate of the raw reads.
+ 2. Miniasm does not build a *consensus sequence* of the assembly. Building a consensus sequence is a common practice to reduce errors that the sequencing process introduces into single sequencing reads. By building a censensus sequence where each nucleotide position is based on the consensus of many reads covering the position sequencing errors can be removed and the resulting assembly is of much higher quality. 
  
-First use minimap to map the filtered nanopore reads onto themselves. This will identify overlaps between read. Change into the directory *assembler_practical/minimap_miniasm* in the practical directory and map the reads using
+First use minimap to map the filtered nanopore reads onto themselves. This will identify overlaps between the read. 
+
+Change into the directory *assembler_practical/minimap-miniasm* in the practical directory and map the reads using
 
 
     minimap2 –x ava-ont \
-    ../../qc_practical/example_2/nanofilt_trimmed.fastq \ 
-    ../../qc_practical/example_2/nanofilt_trimmed.fastq \
-    | gzip -1 > ./minimap.paf.gz
+    ../../qc_practical/filtered.fastq \ 
+    ../../qc_practical/filtered.fastq \
+    > ./minimap.paf
 
 <br>
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
@@ -21,15 +23,16 @@ First use minimap to map the filtered nanopore reads onto themselves. This will 
   The “\” at the end of each line is only for convenience to write a long command into several lines. It tells the command-line that all lines still belong together although the are separated by “enter” keys. However, if you type all of the command, i.e., paths etc, in one line don’t’ use the backslash at the end of the lines.
 </div>
 
-The above command will compare all filtered reads in the fastq file against themselves. Additionally, the output will be passed to the tool gzip (gzip -1) to compress the output and redirect (>) the output into a file called minimap.paf.gz. 
+<br>
 
-Use the minimap output and the trimmed reads to assemble unitigs with miniasm:
+The above command will compare all filtered reads in the fastq file against each other. The output will be rpinted to the command-line and redirect (>) into a file called minimap.paf. This file contains all the matching regions of a read with all other reads. iNow use the overlap information and the filtered fastq file to assemble unitigs using the tool *miniasm*
 
     miniasm -f \
-    ../../qc_practical/example_2/nanofilt_trimmed.fastq \
-    ./minimap.paf.gz > miniasm.gfa
+    ../../qc_practical/filtered.fastq \
+    ./minimap.paf > miniasm.gfa
 
 Miniamp and miniasm do not provide an option for output files but instead write the output directly to the terminal, hence the redirection (>).
+
 The output of miniasm is a column based file in gfa format. It contains the name of a unitig in column 2 and the sequence in column 3. To convert the miniasm.gfa file into a fasta file of unitigs use the following awk command
 
 ```
@@ -37,6 +40,11 @@ awk ’/^S/{print “>”$2”\n”$3}’ miniasm.gfa > miniasm.fasta
 ```
 
 This will create a fasta file with all assembled unitigs called miniasm.fasta. 
+
+div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
+  {% octicon info height:32 class:"right left" aria-label:hi %}
+  A *fasta* file is the predecessor of the fastq file format. In contrast to the fastq file it only stores the name of a sequence in one line starting with a bigger-than sign (>) and the sequence in the lines after the header line. Fasta was the most common sequence file format prior to the fastq format. 
+</div>
 
 But what does the assembly look like? 
 
@@ -58,64 +66,68 @@ Assembly-stats reports basic statistics about all sequences in a fasta file, e.g
 </div>
 [Answer](ASS_ANS.md#genome-assembly-with-minimap2-and-miniasm)
 
-The quality of assemblies can be assessed using many different metrics such as the percentage of reads that map to the assembly, N50, L50 and others. However, in this case we’ll assess the quality of the assembly by comparing it to the published reference. In directory *~/course_data/precompiled* you will find the published sequence of chromosome17 (chr17.fas) of the marine diatom *Thalassiosira pseudonana*, the source of most of the reads used in this tutorial.
+### Identify your critter
 
-First get some assembly statistics. Use assembly-stats to get an overview over chromosome17, e.g., number of nucleotides and number of Ns (gaps or ambiguous sequences). 
+The quality of assemblies can be assessed using many different metrics such as the percentage of reads that map to the assembly, N50, L50 and others. Another way is to compare it to a closely related strain or isolate. But how do we find a closely related organisms? We don't even know what we jsut assembled? 
+
+A quick and easy way is to compare it to known sequences, e.g. using the popular *Basic Local Alignment Search Tool BLAST*.
+
+First, print the miniasm.fasta sequences to the command-line using the *head* command
+
+    course_user> head miniasm.fasta
+
+To compare the sequence:
+
+ * highlight a larger stretch of the sequence with your mouse, right-click and copy the sequence.
+ * open firefox, and google "NCBI nucleotide blast server" 
+ * open the link the the blast server of the National Center for Biotechnology Information
+ * paste your sequence into the *Enter Query Sequence*n tex field, scroll down and press *BLAST*
+
+After a while you will get the results of the search. The important metrics to assess whether your sequence matches another sequence will are
+
+ * Query cover: How much of your sequence actually matches the known NCBI database sequence?
+ * Percent Identity: What is the percentage of identical nucleotides over the query cover?
+ * E-value: This is a measure for the likelyhood that the similarity between the two sequences, the query and the database sequence, could have been by chance. The lower the E-value the less likely that the similarity is a chance encounter.
+
+<div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
+  {% octicon question height:32 class:"right left" aria-label:hi %}
+  <ol start="2">
+   <li>Do you think we found a good match using BLAST?</li>
+   <li>How closely do you think is the hit organism related to our critter?</li>
+ </ol>
+</div>
+[Answer](ASS_ANS.md#blast-results))
+
+
+### Compare the complete assembly to a reference
+
+Now that we found a close relative, lets compare the complete assembly to it's genome. In directory *~/course_data/misc* you will find the sequence of the bacteria we just identified, *Brevefilum fermentans* in the fasta file *b_fermentans.fna* 
+
+First get some assembly statistics. Use assembly-stats to get an overview over the B. fermentans genome , e.g., number of nucleotides, total length, and number of Ns (gaps or ambiguous sequences). 
 
 Compare the two statistics. Do some of the miniasm unitigs match the reference sequence in length?
 
-### Compare two assemblies using *Mummer/DNADiff* <img src="figures/SL.png" height="30px">
+### Compare two assemblies using *Mummer/DNADiff* 
 
 To compare the miniasm assembly to the reference genome use the tool dnadiff that is part of the Mummer package. Mummer is a fast aligner that can align complete genomes in relatively short time.
 
 ```
-dnadiff -p dnadiff ~/course_data/precompiled/chr17.fasta miniasm.fasta
+dnadiff -p dnadiff ~/biosec_course/misc/b_fermentans.fna miniasm.fasta
 ```
 
-The above command will align the chr17 sequence with the miniasm unitigs in the fasta file and produce a series of output files that all start with the prefix *dnadiff*. Open the file *dnadiff.report* (e.g. by navigating to the folder and double-clicking it) to see a report of the analysis. 
+The above command will align the B. fermentans sequence with the miniasm unitigs in the fasta file and produce a series of output files that all start with the prefix *dnadiff*. Open the file *dnadiff.report* (e.g. by navigating to the folder and double-clicking it) to see a report of the analysis. 
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %} 
-  <ol start="2"> 
+  <ol start="4"> 
    <li>How many of the miniasm sequences align with the reference?</li>
-   <li>What is the average %-identity of the miniasm assembly compared to the reference? Would you have expected this %-identity?</li>
+   <li>How many nucleotides align to the reference? What is the average percent identity of the aligned sequences></li>
  </ol>
 </div>
 [Answers](ASS_ANS.md#2-how-many-of-the-miniasm-sequences-align-with-the-reference)
 
-### Comparing two assemblies using *Assemblytics* Dot-Plots <img src="figures/SL.png" height="30px">
 
-Multiple tools also provide visual representations of the mummer output. Here we will use the online tool  Assemblytics  to visualise our comparison.
-
-Open Firefox and go to www.assemblytics.com and click on the “Drop Delta file here for upload” field. Navigate to the directory with your miniasm assembly and select the dnadiff.delta file. When the Upload is done (the progress bas has to disappear) press the “Submit” button. 
-
-<img src="figures/ASS_M_1.png" height="300px">
-
-On the next screen press the green “Continue” button. As soon as the analysis is finished a series of plots and statistics will appear. You can inspect those, if you like. However, for the moment we are more interested in the “Interactive Dot Plot”
-
-<img src="figures/ASS_M_2.png" height="300px">
-
-
-### Dot-Plots Explained
-
-A dot-plot is a visual representation of the similarity of two or more sequences. Each of the two axis represent one sequence starting at the first nucleotide in point 0/0 (where the the x-axis and the y-axis meet) and ending at the last nucleotide, i.e., the end of each axis. In a dot plot a "dot" is drawn on the plot if the location at position "x" in sequence 1 is similar to location at position "y" in sequence 2.
-
-In this case the resulting dot-plot shows the miniasm unitigs on the y-axis and the reference sequence of chr17 on the x-axis. Sequence parts that align and are in the same order are shown as diagonal lines. Similarly, orthogonal lines (upper left to lower right) indicate inversions in one of the sequences. Breaks and gaps in the line indicate Insertions and deletions (Indels) or generally unaligned regions.
-
-
-<img src="figures/ASS_M_3.png" height="400px">
-
-Based on the Assemblytics dot-plots:
-
-<div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
-  {% octicon question height:32 class:"right left" aria-label:hi %} 
- <ol start="4">
-  <li>How many of the miniasm unitigs align with the reference?</li>
-  <li>Does the miniasm assembly cover the complete reference?</li>
-  <li>What could the repetitive region at the end of chromosome 17 be?</li>
- </ol>
-</div>
-[Answers](ASS_ANS.md#4-how-many-of-the-miniasm-unitigs-align-with-the-reference)
+Given that this is a *raw* assembly, i.e., no error correction, polishing or the like has been performed, a sequence similarity of >=94% would already be pretty good if we compared it to the actual reference. Given that the NCBI sequence is most likely only closely related and not identical, the quality of the miniasm assembly is very good.
 
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/ASS_F.html">CONTINUE -></a>

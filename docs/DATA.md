@@ -1,5 +1,7 @@
 # Tools, dependencies and course data
 
+[{% octicon home height:32 class:"right left" aria-label:hi %}](index.md)
+
 ## List of Bioinformatic Tools used
 * [Minimap](https://github.com/lh3/minimap2)
 * [Miniasm](https://github.com/lh3/miniasm)
@@ -98,8 +100,5 @@ If you now type *conda --version* you should see the conda version printed to th
     conda 4.14.4
 
 Conda can now be used on your system.
-
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_1.html">CONTINUE -></a>
-</p>
 
 

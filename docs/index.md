@@ -6,7 +6,6 @@ at the 28th-30th of November at the Australian National University.
 ## Content
  * [Course Overview](ENV.md)
    * [VirtualBox installation](VM.md)
-   * [Tools, dependencies and course data](DATA.md))
  * [Introduction to the Command-line Interface](INTRO_1.md)
    * [Navigation](INTRO_2.md)
    * [Files and Directories](INTRO_3.md)
@@ -31,4 +30,5 @@ at the 28th-30th of November at the Australian National University.
    * [Conda - Self-Check Answers](CONDA-ANS.md)
    * [Conda / Mamba Cheat Sheet](CON-CS.md)
    * [QC Answers](QC_ANS.md)
+   * [Tools, dependencies and course data](DATA.md))
 

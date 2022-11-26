@@ -6,7 +6,7 @@ The initial step  of every sequencing project is the quality control step to ass
 
 The quality control step also gives you information for your data filtering and trimming, i.e., removal of those reads that are too short or too low in quality.
 
-An increasing number of tools is available for sequence data QC and filtering, with different strength and applicaton cases. Here, we will use a software suite called [NanoPack](https://github.com/wdecoster/nanopack) written by Wouter de Coster. It includes 6 tools for QC, filtering and trimming of nanopore data. 
+An increasing number of tools is available for sequence data QC and filtering, with different strength and applicaton cases. Here, we will use 2 commonly uwsed tools *NanoPlot* and *NanoFilt* written by Wouter de Coster.  
 
 **Data directory:** *~/biosec_course/practicals/qc_practical*
 

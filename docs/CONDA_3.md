@@ -4,7 +4,7 @@
 
 ## Introduction to Conda
 
-Conda is a package manager that automates the installation of scripts, packages and dependencies in a user-friendly way. IT uses the concept of *environments* that are independent and don't interact with each other, limiting the possibility of dependency or package conflicts.
+Conda is a package manager that automates the installation of scripts, packages and dependencies in a user-friendly way. It uses the concept of *environments* that are independent and don't interact with each other, limiting the possibility of dependency or package conflicts.
 
 A usual conda workflow looks like this:
   <ul>
@@ -66,7 +66,7 @@ To list all conda environments use the command **conda env list**. If the only e
     base                  *  /home/course_user/miniconda3
     ont_test              *  /home/course_user/miniconda3/ont_test
 
-There it is, in */home/course_user/miniconda3/ont_test*. However, on your AWS instance you will see several other environments in addition to the one you just created, but ignore these for the moment.
+There it is, in */home/course_user/miniconda3/ont_test*. However, on your virtual machine you will see several other environments in addition to the one you just created, but ignore these for the moment.
 
 To remove the environment, all one would have to do is to remove the directory using **rm -r**
 
@@ -212,7 +212,7 @@ Once Conda is done with the installation activate the environment *ont_test2* an
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
   <br><b>Tip</b><br>
-  You can also install packages in already existing environments without activating it suing the <b>conda install</b> command but specifying the name of the environment you want to install the package into using the <b>--name</b> flag: <br><i>conda install --name ENV_NAME PACKAGE_NAME</i> 
+  You can also install packages in already existing environments without activating it using the <b>conda install</b> command but specifying the name of the environment you want to install the package into using the <b>--name</b> flag: <br><i>conda install --name ENV_NAME PACKAGE_NAME</i> 
 </div>
 
 Great. Now you have a good basis to work with Conda environments

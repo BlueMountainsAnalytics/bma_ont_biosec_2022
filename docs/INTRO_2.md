@@ -6,7 +6,7 @@ When first opening a command-line or *terminal* you will see a screen that looks
  
     course_user> _
     
-Instead of *course_user* you will see your login name, as well as maybe the name of the computer you are using followed by some character that indicates where you can start to type commands. In the above example it is the character **>** but it might also be a **$** or **#**. This is followd by a full square or an underscore that indicates where in the line you currently are, i.e., where the next typed character will appear.
+It shows your login name, *course_user*, as well as maybe the name of the computer you are using followed by some character that indicates where you can start to type commands. In the above example it is the character **>** but it might also be a **$** or **#**. This is followd by a full square or an underscore that indicates where in the line you currently are, i.e., where the next typed character will appear.
 
 
 ## Location, location, location

@@ -4,7 +4,7 @@
 
 ## Installing Conda
 
-For this tutorials, Conda is already installed on the AWS instances. You can confirm this either with the **which** command from the CLI tutorial to see where conda is installed, or you can check it by asking conda for the version installed on your system:
+For this tutorials, Conda is already installed on your virtual machine. You can confirm this either with the **which** command from the CLI tutorial to see where conda is installed, or you can check it by asking conda for the version installed on your system:
 
     course_user> conda --version
     conda 4.14.4
@@ -16,7 +16,7 @@ However, in case your system does not have conda installed you will see somethin
 
 In this case, please see the [Miniconda installation](DATA.md#miniconda-installation) instructions.
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_2.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_3.html">CONTINUE -></a>
 </p>    
     
 

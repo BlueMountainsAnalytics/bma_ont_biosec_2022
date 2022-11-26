@@ -8,41 +8,37 @@ The fasta file contains 8 unitigs (n = 8) and the longest unitig is 474,411 nucl
 
 <img src="figures/A25.png" height="100px">
 
-### 2. How many of the miniasm sequences align with the reference?
 
-5 out of 8
+### 2. Do you think we found a good match using BLAST?
 
-<img src="figures/A26.png" height="80px">
+The Blast result page shows that the database sequence is
 
-### 3. What is the average %-identity of the miniasm assembly compared to the reference? Would you have expected this %-identity?
+* hits 99% of our sequence (query cover)
+* with 90.66% identical nucleotides
+* and an E-value of 0
 
-Depending of whether you use the <i>1-to-1</i> or the <i>M-to-M</i> statistics the %-identity is either 88.13 or 88.12, respectively.
+That makes it a really good hit.
 
-<img src="figures/A27.png" height="100px">
+<img src="figures/blast.png" height="80px">
 
-The low %-identity of the assembly when compared to the "truth" (reference) is expected because miniasm does not perform any kind of error correction or consensus sequence building. Thus, the error rate of the resulting assembly is identical or similar to the error rate of the input reads.
+### 3. How closely do you think is the hit organism related to our critter?
+
+>90% identity should already indicate a very close relationship. Additionally, as this is an unpolished unitig sequence, some of the differences could be attributed to sequencing errors. Hence the actual percent-identity is most likely higher. THerefore, we could hypothesis that this is the same genus , possibly the same species of baceria.
+
+
+### 4. How many of the miniasm sequences align with the reference?
+
+6 out of 10
+
+### 5. How many nucleotides align to the reference? What is the average percent identity of the aligned sequences
+
+The output shows that >97% of the B. fermentans sequence and >92% of the miniasm assembly align. Furthermore, depending on whether we look at  the <i>1-to-1</i> or the <i>M-to-M</i> statistics, the %-identity is either 94.11 or 94.06, respectively.
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
   The difference between is that the <i>1-to-1</i> relationship only counts those alignment blocks that are bidirectional, i.e., hits reference->query as well as query->reference. In contrast, the <i>M-to-M</i> option (many-to-many) also counts alignment blocks that are only found in a reference->query or query->reference direction. Thus the M-to-M option is a <i>superset</i> of the 1-to-1 option that maximises the coverage of all alignments at the expense of %-indentity.
 </div>
 
-### 4. How many of the miniasm unitigs align with the reference?
-
-Given that the Assemblytics dot-plot is a visualisation of what we already saw int he report file the answer is again "5". However, the Assemblytics dot-plot shows that only 2 of the unitigs align over the majority of the sequence with the reference without (major) disruptions or INDELS: utg00004l and utg00001l. The dot-plots also show two repeat regions in the beginning of the sequence (the red crosses in utg00004l).
-
-<img src="figures/A28.png" height="200px">
-
-
-### 5. Does the miniasm assembly cover the complete reference?
-
-Overall the assembly covers almost the complete sequence as show in the diagonal line starting at 0/0 (lower right corner) and continuing through utg00004l and utg00001l to the end of Chr17. However, it seems that a small part at the transition between the two unitigs is missing, represented by a break and shift to the right in the diagonal line.
-
-<img src="figures/A29.png" height="200px">
-
-### 6. What could the repetitive region at the end of chromosome 17 be?
-
-One potential explanation could be that the assembly includes a telomere-sequence, repeat sequences at the end of chromosomes that protects the single-strand overlap of the DNA against degradation. A common telomere sequence in eukaryotes is (TTAGGG) * N.
 
 ----
 
@@ -50,9 +46,8 @@ One potential explanation could be that the assembly includes a telomere-sequenc
 
 ### 1. Does the assembly differ from the miniasm assembly, e.g., wrt total length, number of contigs and length of the contigs?
 
-Yes, the Flye assembly results in more than 4 times the number of contigs (33) and the largest contig is also longer than the miniasm assembly (681,342 nucleotides). However, the average length of the contigs is ~20k nucleotides shorter in the Flye assembly (~73k) in comparison to the miniasm assembly (~96k).
-
-<img src="figures/A30.png" height="100px">
+Yes, the Flye assembly results in ~3 times the number of contigs (31). Additionally, the longest sequence is very similar to the length of the B. fermentans genome. It also represents >=80% of the complete assembly (see N50-N80 values and number of sequences). Hence, the additional 30 sequences represent <=20% of the complete assembly, i.e., are pretty short.
+Furthermore, the Flye assembly is ~300,000 nucelotides longer in total.
 
 ### 2. How many contigs aligned with the reference? What is the error rate?
 
