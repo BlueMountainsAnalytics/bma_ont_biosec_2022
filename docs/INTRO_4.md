@@ -124,4 +124,4 @@ Thus, a CLI command consists of
 </div>
 [Answers](INTRO_ANS.md#self-check-2) 
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_1.html">CONTINUE -></a></p>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/CONDA_1.html">CONTINUE -></a></p>

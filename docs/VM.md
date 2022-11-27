@@ -47,5 +47,5 @@ Follow the instructions and continue the installation process until it is finish
 
 Congratulations, you just installed VirtualBox. To start the software double click the VirtualBox.app in your Applications folder.
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/DATA.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/DATA.html">CONTINUE -></a>
 </p>

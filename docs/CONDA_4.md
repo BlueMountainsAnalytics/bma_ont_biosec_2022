@@ -31,7 +31,7 @@ The main difference is that Mamba is often faster and more reliable than Conda.
 Congratulations, you are finally ready to do some Bioinformatics ... but maybe get a tea and a cookie first :)
 
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/QC.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC.html">CONTINUE -></a>
 </p>    
     
 

@@ -130,7 +130,7 @@ The above command will align the B. fermentans sequence with the miniasm unitigs
 Given that this is a *raw* assembly, i.e., no error correction, polishing or the like has been performed, a sequence similarity of >=94% would already be pretty good if we compared it to the actual reference. Given that the NCBI sequence is most likely only closely related and not identical, the quality of the miniasm assembly is very good.
 
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/ASS_F.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_F.html">CONTINUE -></a>
 </p>
 
 

@@ -36,5 +36,5 @@ New Mac computers with the M1/M2 chips are not supported for this tutorial. The 
 
 A complete list of the tools, dependencies, and links to the data and conda environment files can be found [here](DATA.md#List-of-bioinformatic-tools-used)
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/VM.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/VM.html">CONTINUE -></a>
 </p>

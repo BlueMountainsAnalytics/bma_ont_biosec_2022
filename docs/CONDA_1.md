@@ -10,5 +10,5 @@ On the command-line, it usually requires several commands to install a new tool 
 
 **Package Managers** are collections of scripts and programs that helps users to decomplicate the installation of tools on the command-line and manage their dependencies. Most linux distributions come with their own package managers installed, e.g. aptitude for Ubuntu and zypper for Suse. A very popular *cross-platform* pacakge manager, i.e., it can be used on most/all computer "platforms", is the package manager **Conda**. Conda provides not only a user-friendly way of installing tools and packages including it's dependencies but creates so called *environments* in which the packages are installed into minimising the potential for conflicts between packages. 
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_2.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/CONDA_2.html">CONTINUE -></a>
 </p>

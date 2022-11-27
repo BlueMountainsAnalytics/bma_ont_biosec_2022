@@ -98,5 +98,5 @@ In the example above the N90 value is 10.
   As shown above, many short reads in an assembly may not affect the N50 which is one of the reasons why the N50 (alone) is not a useful metric to assess or compare assembly qualities.
 </div>
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/QC_F.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC_F.html">CONTINUE -></a>
 </p>

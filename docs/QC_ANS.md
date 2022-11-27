@@ -48,6 +48,6 @@ The *Active pores over time* together with the number of *Active Channels* from 
 
 Overall, this was not a good sequencing run overall. However, the flowcell used should have been dead alread, i.e., we were happy to get an additional 18MB out of it.
 
-<p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/QC_N.html">BACK =></a>
+<p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC_N.html">BACK =></a>
 </p>
 

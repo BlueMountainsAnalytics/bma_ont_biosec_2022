@@ -102,6 +102,6 @@ The third command, **cd -** will change back to the directory we just came from:
   </ol>
 </div>
 [Answers](INTRO_ANS.md#selfcheck1)
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_3.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/INTRO_3.html">CONTINUE -></a>
 </p>
 

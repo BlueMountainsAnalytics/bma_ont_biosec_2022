@@ -72,5 +72,5 @@ To see a little more ab out the effect of the filtering create a last directory,
 Open the *Nanoplot-report.html* file and have a look at the read length and how filtering affected the overall quality of the sequencing output.
 
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/ASS.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS.html">CONTINUE -></a>
 </p>

@@ -67,5 +67,5 @@ With this knowledge we can now properly interpret the output of ll of our curren
     <li>The file <i>sequences.fasta</i> is 251 bytes and file <i>to-do.txt</i> is of size 1551 bytes</li>
   </ul>
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_4.html">CONTINUE -></a></p>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/INTRO_4.html">CONTINUE -></a></p>
 

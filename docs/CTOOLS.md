@@ -115,4 +115,4 @@ Once you're connected MobaXTerm will open a terminal window and you can type com
   If you encounter a <b>Windows Firewall</b> warning when trying to connect with MobaXTerm you can also use a Terminal in your browser as will be explained later in the tutorial.
 </div>
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_1.html">CONTINUE -></a></p>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/CONDA_1.html">CONTINUE -></a></p>

@@ -25,5 +25,5 @@
 
 Your operating system cannot find the tool *porechop* outside of the environment! This is the expected behavior of conda: the packages and tools installed inside a conda environment are only *visible* inside of that environment. As soon as you de-activate your environment your computer does not know where to find them.
 
-<p align="left"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_3.html">BACK =></a>
+<p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/CONDA_3.html">BACK =></a>
 </p>

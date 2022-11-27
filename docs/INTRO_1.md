@@ -18,6 +18,6 @@ In contrast to the command line interface we interact with modern computers thro
 
 Many tools and programs in bioinformatics are command-line based programs that either don’t need or simply don’t have a GUI. In fact for a lot of bioinformatic application cases a GUI is more of a detriment than a benefit. Many bioinformatics tools are written by researchers from a wide range of scientific fields and not by professional software engineers. In a fast moving field such as bioinformatics with its frequently changing file formats and short half-life of existing tools a GUI adds another layer of complexity to a software project that has to be kept up-to-date. Therefore, and due to the fact that lightweight command-line based tools can easily be written, shared, and adapted to new tasks the vast majority of bioinformatics tools are command-line based and new developments in the field are almost exclusively provided in form of scripts and packages written in languages such as python, R, and perl.
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/INTRO_2.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/INTRO_2.html">CONTINUE -></a>
 </p>
 

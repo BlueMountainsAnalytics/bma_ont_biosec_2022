@@ -19,7 +19,7 @@ During this course you will
  * Perform a completeness analysis 
  * Perform a basic analysis of metabarcoding reads
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/QC.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC.html">CONTINUE -></a>
 </p>
 
 ~                                                                                                                                                                                              

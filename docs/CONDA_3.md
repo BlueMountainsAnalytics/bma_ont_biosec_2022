@@ -252,7 +252,7 @@ To create a conda environment from scratch one would have to specify the environ
 
 For a short Conda Cheat-Sheet click [here](CON-CS.md).
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_4.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/CONDA_4.html">CONTINUE -></a>
 </p>    
     
 

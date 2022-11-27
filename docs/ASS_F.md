@@ -49,5 +49,5 @@ Open the flye_dnadiff.report file (e.g. double-click on the file).
 </div>
 [Answer](APP_ANS.md#2-how-many-contigs-aligned-with-the-reference-what-is-the-error-rate) 
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/ASS_ERR.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_ERR.html">CONTINUE -></a>
 </p>

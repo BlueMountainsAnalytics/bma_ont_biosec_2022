@@ -16,7 +16,7 @@ However, in case your system does not have conda installed you will see somethin
 
 In this case, please see the [Miniconda installation](DATA.md#miniconda-installation) instructions.
 
-<p align="right"><a href="https://bluemountainsanalytics.github.io/BMA_CLI-tutorial/CONDA_3.html">CONTINUE -></a>
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/CONDA_3.html">CONTINUE -></a>
 </p>    
     
 
