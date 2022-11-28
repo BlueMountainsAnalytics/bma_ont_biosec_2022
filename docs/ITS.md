@@ -1,5 +1,7 @@
 # Community analysis using marker genes
 
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](ASS_BUSC.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](END.md)
+
 In contrast to *whole genome sequencing* sequencing is more often applied to perform community analyses using marker genes, e.g., 16S rRNA genes, or mitochondrial cytochrome b (cob) genes. However, prior to long-read technologies, often partial marker genes were used for community analyses, e.g. hypervariable regions V1-V4 of the rRNA gene.
 
 With Oxford nanopore sequencing almost complete rRNA genes can be used to infer communities with a much higher phylogenetic resolution and sensitivity. 

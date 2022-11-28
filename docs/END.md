@@ -8,3 +8,5 @@ This is the end of this part of the course. I hope you had fun and got an idea a
 For questions, comments or to discuss potential projects please reach out to
 
 tim.kahlke@bluemountainsanalytics.com.au
+
+
