@@ -27,5 +27,5 @@ at the 28th-30th of November 2022 at the Australian National University.
  * [Basic ITS analysis](ITS.md)
  * APPENDIX
    * [Conda / Mamba Cheat Sheet](CON-CS.md)
-   * [Tools, dependencies and course data](DATA.md))
+   * [Tools, dependencies and course data](DATA.md)
 
