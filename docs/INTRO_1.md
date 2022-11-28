@@ -2,6 +2,9 @@
 
 [{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](index.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](INTRO_2.md)
 
+This is a primer for use of a linux command-line interface (CLI). If you are already familiar with using a terminal feel free to jump to the Conda section [here](CONDA_1.md).
+
+
 ## Graphical vs Command-Line Interface
 
 The command line interface (CLI) often simply referred to as the command-line, console or terminal,  is  a  way of  interacting  with  a  computer  by  means  of  typing  commands  on a specific line and submitting them to the computer by hitting the enter key.  Historically, the command-line was the initial way of interacting with a personal computer: a user typed commands using the keyboard and the computer executed them.

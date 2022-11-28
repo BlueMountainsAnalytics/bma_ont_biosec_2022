@@ -4,10 +4,7 @@
 
 ### 1. How many unitigs are there and what is the length of the longest one?
 
-The fasta file contains 8 unitigs (n = 8) and the longest unitig is 474,411 nucleotides long.
-
-<img src="figures/A25.png" height="100px">
-
+The fasta file contains 10 unitigs (n = 10) and the longest unitig is 1,588,013 nucleotides long.
 
 ### 2. Do you think we found a good match using BLAST?
 
@@ -42,7 +39,7 @@ The output shows that >97% of the B. fermentans sequence and >92% of the miniasm
 
 ----
 
-### Genome assembly using Flye
+## Genome assembly using Flye
 
 ### 1. Does the assembly differ from the miniasm assembly, e.g., wrt total length, number of contigs and length of the contigs?
 
@@ -73,4 +70,21 @@ If you zoom in on contig_2 (click ont he name) it seems that contig_2 extends th
 
 <img src="figures/A33.png" height="300px">
 
+----
+
+## Miniasm Medaka Error Correction
+
+### 1. Did the quality of the assembly change
+
+Yes, now 7/10 not 6/10 sequences align to the reference. Furthermore, the length of the miniasm assembly has increase, as well as the number of aligned nucleotides (92.85% to 93.48%) and average %-identity has increased from ~94% to >99%.
+
+<p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_ERR.html">BACK =></a>
+
+## Flye Medaka Error Correction
+
+### 1. How did the quality of the assembly change
+
+In contrast to the miniasm assemlbye Medaka has improved the flye assembly only marginally,e.g., the *1-to-1* alignment %-identity increased from 99.84 to 99.86%. Given that Flye apready performs error correction this is somewhat expected. However, this is not always the case. Especially for R9.4 chemistries or different genomes Medaka can have a more significant effect on the assembly quality.
+
+<p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_ERR.html">BACK =></a>
 

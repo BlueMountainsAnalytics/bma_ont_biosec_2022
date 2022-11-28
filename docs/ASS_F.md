@@ -2,25 +2,24 @@
 
 [{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](ASS_M.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](ASS_ERR.md)
 
-Another assembler that can be used for long-reads such as PacBio and Oxford Nanopore is Flye. In contrast to the minimap and miniasm pipeline Flye also produces a polished consensus sequence for the assembly which significantly reduces the error rate.
+Another very popular assembler that can be used for long-reads such as PacBio and Oxford Nanopore is *Flye*. In contrast to the minimap and miniasm pipeline Flye also produces a polished consensus sequence for the assembly which significantly reduces the error rate.
 
-Change into the *flye* directory in the *assembler_practical* folder and run flye on the **unfiltered** read fastq file. 
+Change into the *flye* directory in the *assembler_practical* folder and run flye on the filtered read fastq file. 
 
-
-    flye --nano-raw \
-    ~/biosec_course/qc_practical/filtered.fastq \
-    --genome-size 3m --out-dir ./flye_output
+    course_user> flye --nano-raw \
+    course_user> ~/biosec_course/qc_practical/filtered.fastq \
+    course_user> --genome-size 3m --out-dir ./flye_output
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
   In most cases Flye does not require reads to be pre=processed, i.e., we could use the fasq file of unfiltered reads. However, to make the output of Flye more comparable to Miniasm we use teh same input file for this example.
 </div>
 
-As you can see, flye requires the input reads (--nano-raw) as well as an output directory and the (expected) size of the final assembly which, in this case is set to 3 megabases (3,000,000 bases). The output of flye are several files including the assembly in fasta format.
+As you can see, flye requires the input reads (--nano-raw) as well as an output directory and the (expected) size of the final assembly which, in this case is set to 3 megabases (3,000,000 bases) which we estimate from the *B. fermentans* genome. The output of Flye are several files including the assembly in fasta format.
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %} 
-  Flye takes significantly more time and resources to run. On an average laptop this assembly may take 20 minutes and more. If you don’t want to wait just stop flye (press the 'Ctrl' and 'c' keys at the same time) and copy the provided result files from directory <i>~/biosec_course/misc/flye_output</i> into the *flye_output* directory here.
+  Flye takes significantly more time and resources to run. On an average laptop this assembly may take 20 minutes and more. If you don’t want to wait just stop flye (press 'Ctrl-c') and copy the provided result files from directory <i>~/biosec_course/misc/flye_output</i> into the <i>flye_output</i> directory using <br><i>cp ~/biosec_course/misc/flye_output/* ./flye_output</i>.
 </div>
 
 When Flye is finished use *assembly-stats*  to get a first overview over the finished assembly.
@@ -35,9 +34,9 @@ When Flye is finished use *assembly-stats*  to get a first overview over the fin
  
 Now change back into the *assembly_practical/flye* directory abd align the flye assembly to the B. fermentans genome using dnadiff
  
-    dnadiff -p flye_dnadiff \
-    ~/biosec_course/misc/b_fermentans.fna \
-    flye_output/assembly.fasta
+    course_user> dnadiff -p flye_dnadiff \
+    course_user> ~/biosec_course/misc/assembly_practical/b_fermentans.fna \
+    course_user> flye_output/assembly.fasta
 
 Open the flye_dnadiff.report file (e.g. double-click on the file). 
 

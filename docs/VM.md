@@ -6,11 +6,13 @@ VirtualBox is a free software tool that lets you load so called virtual machines
 
 ## Download VirtualBox
 
-VirtualBox can be downloaded from the official [homepage](http://www.virtualbox.org). Click on the big "VirtualBox 7.0 button".
+VirtualBox can be downloaded from the official [homepage](http://www.virtualbox.org). Click on *Downloads* on the left menu to download Virtualbox.
 
-For Windows computers click on the “Windows hosts” in section **VirtualBox 7.0.2**.
+**Note** As of 28/11/2022 we advice to download [VirtualBox 6.1 builds](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1). The recently published VirtualBox v7 seems to not install protperly for some users.
 
-For older / non-M1 MacBooks or other Apple computers select "macOS/Intel hosts". 
+For Windows users click on *Windows hosts*. 
+
+For older / non-M1 MacBooks or other Apple computers select *macOS/Intel hosts*. 
 
 **New M1/M2 Macs are not supported!!** The *Developer preview for macOS / Arm64 (M1/M2) hosts* is **NOT** a working VirtualBox version and will not install on your systems.
 

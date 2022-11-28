@@ -2,6 +2,10 @@
 
 [{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](INTRO_4.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](CONDA_2.md)
 
+This is a primer for the use of package managers *Conda* and the related *Mamba*. This is **not** essential for following the tutorial but is nevertheless useful when working with command-line and bioinformatics.
+
+If you are already familiar with package managers, don't want to waste more time or already had enough IT concepts to learn and are keen to start with the tutorials feel free to moce on to [Long-Read data analysis workflow](OVER_1.md)
+
 ## An Introduction to Package Managers
 
 Installing new apps/softwares and all the things required, the *dependencies*, on a GUI such as Windows requires only a double-click on the installer program.

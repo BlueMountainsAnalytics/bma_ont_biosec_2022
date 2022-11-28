@@ -12,28 +12,32 @@ First use minimap to map the filtered nanopore reads onto themselves. This will 
 Change into the directory *assembler_practical/minimap-miniasm* in the practical directory and map the reads using
 
 
-    minimap2 –x ava-ont \
-    ../../qc_practical/filtered.fastq \ 
-    ../../qc_practical/filtered.fastq \
-    > ./minimap.paf
+    course_user> minimap2 –x ava-ont -t 4\
+    course_user> ../../qc_practical/filtered.fastq \ 
+    course_user> ../../qc_practical/filtered.fastq \
+    course_user>> ./minimap.paf
 
 <br>
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %} 
-  The “\” at the end of each line is only for convenience to write a long command into several lines. It tells the command-line that all lines still belong together although the are separated by “enter” keys. However, if you type all of the command, i.e., paths etc, in one line don’t’ use the backslash at the end of the lines.
+  The “\” at the end of each line is only for convenience to write a long command into several lines. It tells the command-line that all lines still belong together although they are separated by “enter” keys. However, you can type all of the commands in one line jsut without the backslach *\*
 </div>
-
 <br>
+The above command will compare all filtered reads in the fastq file against each other. The output will be printed to the command-line and redirect (>) into a file called minimap.paf. This file contains all the matching regions of a read with all other reads. 
 
-The above command will compare all filtered reads in the fastq file against each other. The output will be rpinted to the command-line and redirect (>) into a file called minimap.paf. This file contains all the matching regions of a read with all other reads. iNow use the overlap information and the filtered fastq file to assemble unitigs using the tool *miniasm*
+The mapping step is computationally expensive. Minimap can therfore distribute the load to many *processor cores*. The command above is using 4 processor cores indicated byt he *-t* flag. In bigger computers this number can be further inceased to speed up the mapping process. If your machine takes too long you can also stop minimap by pressing *Ctrl-c* and copy the pre-compiled results into this folder using 
 
-    miniasm -f \
-    ../../qc_practical/filtered.fastq \
-    ./minimap.paf > miniasm.gfa
+    course_user> cp ~/biosec_course/misc/assembler_tutorial/minimap.paf .
+
+Now use the read overlap information from minimap and the sequences from the filtered fastq file to assemble unitigs using the tool *miniasm*
+
+    course_user> miniasm -f \
+    course_user> ../../qc_practical/filtered.fastq \
+    course_user> ./minimap.paf > miniasm.gfa
 
 Miniamp and miniasm do not provide an option for output files but instead write the output directly to the terminal, hence the redirection (>).
 
-The output of miniasm is a column based file in gfa format. It contains the name of a unitig in column 2 and the sequence in column 3. To convert the miniasm.gfa file into a fasta file of unitigs use the following awk command
+The output of miniasm is a column based file in *Graphical Fragment Assembly* (gfa) format. It contains the name of a unitig in column 2 and the sequence in column 3. To extract those two columns and write them into a fasta file of unitigs use the following *awk* command
 
 ```
 awk ’/^S/{print “>”$2”\n”$3}’ miniasm.gfa > miniasm.fasta
@@ -52,9 +56,8 @@ But what does the assembly look like?
 
 To get some basic assembly statistics use the tool *assembly-stats*.
 
-```
-assembly-stats ./miniasm.fasta
-```
+    course_user> assembly-stats ./miniasm.fasta
+
 
 Assembly-stats reports basic statistics about all sequences in a fasta file, e.g. N50, longest sequence, total number of nucleotides etc. 
 
@@ -68,9 +71,9 @@ Assembly-stats reports basic statistics about all sequences in a fasta file, e.g
 
 ### Identify your critter
 
-The quality of assemblies can be assessed using many different metrics such as the percentage of reads that map to the assembly, N50, L50 and others. Another way is to compare it to a closely related strain or isolate. But how do we find a closely related organisms? We don't even know what we jsut assembled? 
+The quality of assemblies can be assessed using many different metrics such as the percentage of reads that map to the assembly, N50, L50 and others. Another way is to compare it to a closely related strain or isolate. But how do we find a closely related organisms? We don't even know what we just assembled? 
 
-A quick and easy way is to compare it to known sequences, e.g. using the popular *Basic Local Alignment Search Tool BLAST*.
+A quick and easy way is to compare it to known sequences, e.g. using the popular *Basic Local Alignment Search Tool* (BLAST).
 
 First, print the miniasm.fasta sequences to the command-line using the *head* command
 
@@ -80,8 +83,11 @@ To compare the sequence:
 
  * highlight a larger stretch of the sequence with your mouse, right-click and copy the sequence.
  * open firefox, and google "NCBI nucleotide blast server" 
- * open the link the the blast server of the National Center for Biotechnology Information
+ * open the link to the *Nucleotide Blast* server of the National Center for Biotechnology Information (NCBI)
  * paste your sequence into the *Enter Query Sequence*n tex field, scroll down and press *BLAST*
+
+<img src="figures/ass_1.png" height="400px">
+
 
 After a while you will get the results of the search. The important metrics to assess whether your sequence matches another sequence will are
 
@@ -111,9 +117,7 @@ Compare the two statistics. Do some of the miniasm unitigs match the reference s
 
 To compare the miniasm assembly to the reference genome use the tool dnadiff that is part of the Mummer package. Mummer is a fast aligner that can align complete genomes in relatively short time.
 
-```
-dnadiff -p dnadiff ~/biosec_course/misc/b_fermentans.fna miniasm.fasta
-```
+    course_user> dnadiff -p dnadiff ~/biosec_course/misc/assembly_practical/b_fermentans.fna miniasm.fasta
 
 The above command will align the B. fermentans sequence with the miniasm unitigs in the fasta file and produce a series of output files that all start with the prefix *dnadiff*. Open the file *dnadiff.report* (e.g. by navigating to the folder and double-clicking it) to see a report of the analysis. 
 

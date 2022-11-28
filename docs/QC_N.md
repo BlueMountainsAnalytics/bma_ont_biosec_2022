@@ -1,6 +1,23 @@
-# Quality Control using the NanoPlot
+# Quality Control 
 
 [{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](QC.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](QC_F.md)
+
+
+## Getting ready
+
+In case you didn't already do this please start the biosec_anu virtual machine (see [here](ENV_1.md) on how to set it up).
+
+Once Ubuntu has started and you see the Desktop open the terminal app
+
+<img src="figures/term.png" height="400px">
+
+Before we can use any of the tools of this tutorial we have to first activate the conda environment *biosec*
+
+    course_user> conda activate biosec
+
+Now you're ready to go
+
+## Quality Control using the NanoPlot
 
 NanoPlot gives a good overall overview over a single sequencing run. It can use several file formats as input, e.g., the sequencing_summary file created by the basecaller, and fastq files containing the basecalled read sequences.
 
@@ -18,6 +35,9 @@ In the *qc_practical* directory you will also see *summary_files* directory with
 
 As you can see the sequencing_summary file is a tab-separated file with one read/sequence per line and a number of statistics of each read.
 
+Before we can use any of the tools of this tutorial we have to first activate the conda environment *biosec*
+
+    course_user> conda activate biosec
 
 Now, use Nanoplot to create a summary of all the sequences in this run. First, change back into the *~/biosec_course/qc_practical directory*. Then call NanoPlot, specify that it is a summary file you want to use as input using the flag *--summary*, and give the *example_1* directory as the output directory with the *-o* flag:
 
@@ -28,10 +48,9 @@ Now, use Nanoplot to create a summary of all the sequences in this run. First, c
   Do <b>not</b> copy-paste the commands shown on the tutorial pages! Some characters, e.g., the hyphens, change based on the font used causing random errors in the commands! Even if it seems silly, please type the commands yourself.
 </div>
 
-Once NanoPlot is done change into the *example_1* directory and have a look at the different files NanoPlot created using the **ll** command. The main file showing all the different statistics on one page is called *NanoPlot-report.html*. This file can be opened in your browser, e.g., via the *Open File* menu button in FireFox.
+Once NanoPlot is done change into the *example_1* directory and have a look at the different files NanoPlot created using the **ll** command. The main file showing all the different statistics on one page is called *NanoPlot-report.html*. Open it, e.g., by double-clicking it in the file browser to open it in Firefox
 
-
-<img src="figures/qc_n_1.png" height="300px">
+<img src="figures/qc_n_1.png" height="400px">
 
 
 The output of NanoPlot is structured in two main parts: a tabular header with summary statistics about the sequencing run, and a number of plots giving more detail about certain statistics. 

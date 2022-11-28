@@ -13,9 +13,10 @@ Especially the assembly step itself is often iterative depending on the input da
 
 During this course you will
 
- * perform basic QC steps using NanoPloit
+ * Perform basic QC 
  * Assemble genomes using 2 different assemblers
- * Compare the assemblies to a reference
+ * Perform basic error correction
+ * Compare the assembly to a reference
  * Perform a completeness analysis 
  * Perform a basic analysis of metabarcoding reads
 

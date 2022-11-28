@@ -49,5 +49,15 @@ The *Active pores over time* together with the number of *Active Channels* from 
 Overall, this was not a good sequencing run overall. However, the flowcell used should have been dead alread, i.e., we were happy to get an additional 18MB out of it.
 
 <p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC_N.html">BACK =></a>
+
+## 9. What quality cut-off did the basecaller use?
+
+No read were called below Q5.
+
+## 10. Was a length cutoff applied?
+
+It's not 100% obvious but the shortest reads are >=100 nucleotides.
+
+<p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC_F.html">BACK =></a>
 </p>
 
