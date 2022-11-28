@@ -12,15 +12,19 @@ Here, we will use Medaka on the Miniasm and Flye assemblies and see how they per
 
 Change in the *miniasm-minimap* directory int he *assembler_practical* directory and call the tool *medaka_consensus* on the miniasm.fasta. The read sequences in the  *filtered.fastq* file will be used by medaka to infer sequencing errors to be corrected. In addition to the reads and the assembly medaka requires you to chose the nanopore chemistry and basecalling model the reads were produced on. In our case the reads were produced on a *R10.4* flowcell and basecalled with a *super-accuracy 400bps* model. The output should be written to directory *miniasm_medaka_output*.
 
-    course_user> medaka_consensus -d ./miniasm.fasta -i ../../qc_practical/filtered.fastq -m r1041_e82_400bps_sup_g615 -o miniasm_medaka_output
+    course_user> medaka_consensus -d ./miniasm.fasta \
+    course_user> -i ../../qc_practical/filtered.fastq \
+    course_user> -m r1041_e82_400bps_sup_g615 -o miniasm_medaka_output
 
 As with some other steps Medaka is very computationally expensive and will run for a long time. Please stop Medaka pressing *Ctrl-c* and copy the contents of directory *~/biosec_course/misc/assembler_practical/miniasm_medaka_output/* into the *miniasm-medaka-output* directory in this directory:
 
-    course_user> cp ~/biosec_course/misc/assembler_practical/miniasm_medaka_output/* ./miniasm_medaka_output/
+    course_user> cp ~/biosec_course/misc/assembler_practical/miniasm_medaka_output/* \
+    course_user> ./miniasm_medaka_output/
 
 In medaka's output directory is the polished sequence called *consensus.fasta*. Compare this file to the *B. fermentans* reference using *dnadiff*:
 
-    course_user> dnadiff -p miniasm_medaka ~/biosec_course/misc/b_fermentans.fna ./miniasm_medaka_output/consensus.fasta
+    course_user> dnadiff -p miniasm_medaka ~/biosec_course/misc/b_fermentans.fna  \
+    course_user> ./miniasm_medaka_output/consensus.fasta
 
 Open the *report* file and have a look at the output
 
@@ -30,21 +34,25 @@ Open the *report* file and have a look at the output
     <li>Did the quality of the assembly change?</li>
   </ol>
 </div>
-[Answer](APP_ANS.md#miniasm-medaka-error-correction)
+[Answer](ASS_ANS.md#miniasm-medaka-error-correction)
 
 ## Error correction of the Flye assembly
 
 Now repeat the same process with the Flye assembly. First change into the *assembler_practical/flye* directory and call medaka on the *assembly.fasta* file in the *flye_output* directory:
 
-    course_user> medaka_consensus -d ./flye_output/assembly.fasta -i ../../qc_practical/filtered.fastq -m r1041_e82_400bps_sup_g615 -o flye_medaka_output
+    course_user> medaka_consensus -d ./flye_output/assembly.fasta -i \
+    course_user> ../../qc_practical/filtered.fastq -m r1041_e82_400bps_sup_g615 
+    course_user> -o flye_medaka_output
 
 As before, in case oyu don't want to wait, stop medaka and copy the contents of *~/biosec_course/misc/assembler_practical/flye_medaka_output* into the *flye_medaka_output* directory here
 
-    course_user> cp ~/biosec_course/misc/assembler_practical/flye_medaka_output/* ./flye_medaka_output/
+    course_user> cp ~/biosec_course/misc/assembler_practical/flye_medaka_output/* \
+    course_user> ./flye_medaka_output/
 
 ... and run dnadiff on it
 
-    course_user> dnadiff -p flye_medaka ~/biosec_course/misc/b_fermentans.fna ./flye_medaka_output/consensus.fasta
+    course_user> dnadiff -p flye_medaka ~/biosec_course/misc/b_fermentans.fna \
+    course_user> ./flye_medaka_output/consensus.fasta
 
 <div style="background-color:#cfedfe;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon question height:32 class:"right left" aria-label:hi %}

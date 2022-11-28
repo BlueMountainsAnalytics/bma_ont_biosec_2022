@@ -30,7 +30,7 @@ When Flye is finished use *assembly-stats*  to get a first overview over the fin
     <li>Does the assembly differ from the miniasm assembly, e.g., wrt total length, number of contigs and length of the contigs?</li>
   </ol>
  </div>
-[Answer](APP_ANS.md#genome-assembly-using-flye)
+[Answer](ASS_ANS.md#genome-assembly-using-flye)
  
 Now change back into the *assembly_practical/flye* directory abd align the flye assembly to the B. fermentans genome using dnadiff
  
@@ -46,7 +46,7 @@ Open the flye_dnadiff.report file (e.g. double-click on the file).
     <li>How many contigs aligned with the reference? What is the error rate?</li>
   </ol>
 </div>
-[Answer](APP_ANS.md#2-how-many-contigs-aligned-with-the-reference-what-is-the-error-rate) 
+[Answer](ASS_ANS.md#genome-assembly-using-flye) 
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_ERR.html">CONTINUE -></a>
 </p>

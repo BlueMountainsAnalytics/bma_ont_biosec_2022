@@ -6,6 +6,8 @@
 
 The fasta file contains 10 unitigs (n = 10) and the longest unitig is 1,588,013 nucleotides long.
 
+## Blast results
+
 ### 2. Do you think we found a good match using BLAST?
 
 The Blast result page shows that the database sequence is
@@ -20,7 +22,7 @@ That makes it a really good hit.
 
 ### 3. How closely do you think is the hit organism related to our critter?
 
->90% identity should already indicate a very close relationship. Additionally, as this is an unpolished unitig sequence, some of the differences could be attributed to sequencing errors. Hence the actual percent-identity is most likely higher. THerefore, we could hypothesis that this is the same genus , possibly the same species of baceria.
+More than 90% identity should already indicate a very close relationship. Additionally, as this is an unpolished unitig sequence, some of the differences could be attributed to sequencing errors. Hence the actual percent-identity is most likely higher. THerefore, we could hypothesis that this is the same genus , possibly the same species of baceria.
 
 
 ### 4. How many of the miniasm sequences align with the reference?
@@ -52,13 +54,9 @@ Of the 33 contigs in the Flye assembly 31 aligned to the reference. Interestingl
 
 As expected the error rate of the Flye assembly is much lower than the miniasm assembly because Flye also includes a consensus sequence step which decreases the 1-to-1 error rate to <1% and the M-to-M error rate to <2%.
 
-<img src="figures/A31.png" height="200px">
-
 ### 3. How many contigs align well with the reference?
 
 Although the report shows 33 contigs that align to a certain degree with the reference the assemblytics dot-plot shows that only one contig alignes significantly with the reference: contig_2.
-
-<img src="figures/A32.png" height="300px">
 
 ### 4. Is the Flye assembly more or less fragmented than the miniasm assembly? Why?
 
@@ -67,8 +65,6 @@ The Flye assembly is less fragmented (one contig aligns to the whole reference v
 ### 5. Does the alignment differ from the reference, e.g., does the Flye assembly extend the start or stop of the reference? Are there inversions?
 
 If you zoom in on contig_2 (click ont he name) it seems that contig_2 extends the reference (slightly) at the start (the diagonal line starts at >0 on the Y-axis).
-
-<img src="figures/A33.png" height="300px">
 
 ----
 
@@ -79,7 +75,7 @@ If you zoom in on contig_2 (click ont he name) it seems that contig_2 extends th
 Yes, now 7/10 not 6/10 sequences align to the reference. Furthermore, the length of the miniasm assembly has increase, as well as the number of aligned nucleotides (92.85% to 93.48%) and average %-identity has increased from ~94% to >99%.
 
 <p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_ERR.html">BACK =></a>
-
+<br>
 ## Flye Medaka Error Correction
 
 ### 1. How did the quality of the assembly change
@@ -87,7 +83,7 @@ Yes, now 7/10 not 6/10 sequences align to the reference. Furthermore, the length
 In contrast to the miniasm assemlbye Medaka has improved the flye assembly only marginally,e.g., the *1-to-1* alignment %-identity increased from 99.84 to 99.86%. Given that Flye apready performs error correction this is somewhat expected. However, this is not always the case. Especially for R9.4 chemistries or different genomes Medaka can have a more significant effect on the assembly quality.
 
 <p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_ERR.html">BACK =></a>
-
+<br>
 ----
 
 ## Completeness analysis with BUSCO

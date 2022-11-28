@@ -32,8 +32,9 @@ Now repeat the process with the flye assembly.
   <ol>
     <li>How complete are the 2 assemblies? What are the differences?</li>
     <li>Overall, which assembly would you prefer?</li>
+  </ol>
 </div>
-[Answer](APP_ANS.md#busco)
+[Answer](ASS_ANS.md#busco)
 
 As an interesting test you could run busco on the *B. fermentans* genome to get an idea what the maximum BUSCO score for this critter would be.
 
