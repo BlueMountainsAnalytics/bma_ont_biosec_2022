@@ -36,7 +36,7 @@ Congratulations, you just installed VirtualBox. To start the software double cli
 
 After the download is finished go to the location where you saved the dmg file and double click it.  In the pop-up window couble click the yellow VirtualBox.pkg icon.
 
-<img src="figures/vm_3.png" height="300px">
+<img src="figures/vm_3.png" height="200px">
 
 After clicking the installation process will start and several dialog windows will appear. 
 
