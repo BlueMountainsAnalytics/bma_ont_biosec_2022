@@ -1,6 +1,6 @@
 # Overview
 
-11[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](index.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](VM.md)
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](index.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](VM.md)
 
 This course is intended to give an overview and good working knowledge for anyone who wants to get into bioinformatics for long-read sequencing data analysis. As an introduction it won't cover advanced tool use or workflows but it will introduce the main steps and standard tools used for long-read data analysis and raise awareness for potential problems and pitfalls.
 
