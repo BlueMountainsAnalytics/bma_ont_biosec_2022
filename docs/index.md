@@ -1,4 +1,4 @@
-# Nanopore sequencing for biosecurity
+# Nanopore sequencing for Biosecurity
 
 These github pages provide bioinformatics course material for the course [Nanopore Sequencing for Biosecurity](https://cba.anu.edu.au/news-events/events/nanopore-sequencing-biosecurity) given
 at the 28th-30th of November 2022 at the Australian National University.
