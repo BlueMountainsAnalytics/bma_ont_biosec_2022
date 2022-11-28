@@ -26,10 +26,6 @@ at the 28th-30th of November 2022 at the Australian National University.
    * [Completeness analysis using BUSCO](BUSC.md)
  * [Basic ITS analysis](ITS.md)
  * APPENDIX
-   * [CLI - Self-Check Answers](INTRO-ANS.md)
-   * [CLI Cheat Sheet](CLI-CS.md)
-   * [Conda - Self-Check Answers](CONDA-ANS.md)
    * [Conda / Mamba Cheat Sheet](CON-CS.md)
-   * [QC Answers](QC_ANS.md)
    * [Tools, dependencies and course data](DATA.md))
 
