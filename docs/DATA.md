@@ -6,7 +6,8 @@
 * [Minimap](https://github.com/lh3/minimap2)
 * [Miniasm](https://github.com/lh3/miniasm)
 * [Flye](https://github.com/fenderglass/Flye)
-* [NanoPack](https://github.com/wdecoster/nanopack)
+* [NanoPlot](https://github.com/wdecoster/nanopack)
+* [NanoFilt](https://github.com/wdecoster/nanopack)
 * [Assembler-Stats](https://github.com/sanger-pathogens/assembly-stats)
 * [BASTA](https://github.com/timkahlke/BASTA)
 * [Mummer](https://github.com/mummer4/mummer)
@@ -15,21 +16,25 @@
 
 ## Conda environment file
 
-A conda *environment.yml* file to build the course environment and install all tools into it can be found [here]().
+A conda *environment.yml* file to build the course environment and install all tools into it can be found inside the biosec_course.tar.gz file that can be found [here](https://drive.google.com/drive/folders/1qvpQ2fwCogx39klaP22JcVYVEwXxf50g?usp=share_link).
 
-To create the environment use
+Untar the file in your home directory using
+
+    course_user> tar -xzvf biosec_course.tar.gz
+
+The environment files can be foudn in biosec_course/misc/install_files.
+
+Create the course environment with the following commands:
 
     course_user> conda env create -f environment.yaml
-
-After the installation is finished activate the environment using 
-
-    course_user> conda activate biosec_course
+    course_user> conda env create -f environment.busco.yaml
+    course_user> conda env create -f environment.artic.yaml
+    course_user> install.sh
+    course_user> basta.sh
 
 ## Course data
 
-All course data will be provided with the VirtualBox image. However, a zipped version of the course data and directory structure can be found [here]().
-
-Download and extract the data into your home directory.
+All course data will be provided with the VirtualBox image. However, a zipped version of the course data and directory structure can be found [here](https://drive.google.com/drive/folders/1qvpQ2fwCogx39klaP22JcVYVEwXxf50g?usp=share_link) inside the *nbiosec_course.tar.gz* file.
 
 ## Dependencies
 
