@@ -19,7 +19,7 @@ As you can see, flye requires the input reads (--nano-raw) as well as an output 
 
 <div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %} 
-  Flye takes significantly more time and resources to run. On an average laptop this assembly may take 20 minutes and more. If you don’t want to wait just stop flye (press 'Ctrl-c') and copy the provided result files from directory <i>~/biosec_course/misc/flye_output</i> into the <i>flye_output</i> directory using <br><i>cp ~/biosec_course/misc/flye_output/* ./flye_output</i>.
+  Flye takes significantly more time and resources to run. On an average laptop this assembly may take 20 minutes and more. If you don’t want to wait just stop flye (press 'Ctrl-c') and copy the provided result files from directory <i>~/biosec_course/misc/assembler_prac/flye_output</i> into the <i>flye_output</i> directory using <br><i>cp ~/biosec_course/misc/assembler_prac/flye_output/* ./flye_output</i>.
 </div>
 
 When Flye is finished use *assembly-stats*  to get a first overview over the finished assembly.
@@ -35,7 +35,7 @@ When Flye is finished use *assembly-stats*  to get a first overview over the fin
 Now change back into the *assembly_practical/flye* directory abd align the flye assembly to the B. fermentans genome using dnadiff
  
     course_user> dnadiff -p flye_dnadiff \
-    course_user> ~/biosec_course/misc/assembly_practical/b_fermentans.fna \
+    course_user> ~/biosec_course/misc/assembly_prac/b_fermentans.fna \
     course_user> flye_output/assembly.fasta
 
 Open the flye_dnadiff.report file (e.g. double-click on the file). 

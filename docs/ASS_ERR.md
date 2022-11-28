@@ -16,9 +16,9 @@ Change in the *miniasm-minimap* directory int he *assembler_practical* directory
     course_user> -i ../../qc_practical/filtered.fastq \
     course_user> -m r1041_e82_400bps_sup_g615 -o miniasm_medaka_output
 
-As with some other steps Medaka is very computationally expensive and will run for a long time. Please stop Medaka pressing *Ctrl-c* and copy the contents of directory *~/biosec_course/misc/assembler_practical/miniasm_medaka_output/* into the *miniasm-medaka-output* directory in this directory:
+As with some other steps Medaka is very computationally expensive and will run for a long time. Please stop Medaka pressing *Ctrl-c* and copy the contents of directory *~/biosec_course/misc/assembler_prac/miniasm_medaka_output/* into the *miniasm-medaka-output* directory in this directory:
 
-    course_user> cp ~/biosec_course/misc/assembler_practical/miniasm_medaka_output/* \
+    course_user> cp ~/biosec_course/misc/assembler_prac/miniasm_medaka_output/* \
     course_user> ./miniasm_medaka_output/
 
 In medaka's output directory is the polished sequence called *consensus.fasta*. Compare this file to the *B. fermentans* reference using *dnadiff*:
@@ -44,9 +44,9 @@ Now repeat the same process with the Flye assembly. First change into the *assem
     course_user> ../../qc_practical/filtered.fastq -m r1041_e82_400bps_sup_g615 
     course_user> -o flye_medaka_output
 
-As before, in case oyu don't want to wait, stop medaka and copy the contents of *~/biosec_course/misc/assembler_practical/flye_medaka_output* into the *flye_medaka_output* directory here
+As before, in case oyu don't want to wait, stop medaka and copy the contents of *~/biosec_course/misc/assembler_prac/flye_medaka_output* into the *flye_medaka_output* directory here
 
-    course_user> cp ~/biosec_course/misc/assembler_practical/flye_medaka_output/* \
+    course_user> cp ~/biosec_course/misc/assembler_prac/flye_medaka_output/* \
     course_user> ./flye_medaka_output/
 
 ... and run dnadiff on it

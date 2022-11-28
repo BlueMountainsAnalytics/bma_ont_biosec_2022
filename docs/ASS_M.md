@@ -27,7 +27,7 @@ The above command will compare all filtered reads in the fastq file against each
 
 The mapping step is computationally expensive. Minimap can therfore distribute the load to many *processor cores*. The command above is using 4 processor cores indicated byt he *-t* flag. In bigger computers this number can be further inceased to speed up the mapping process. If your machine takes too long you can also stop minimap by pressing *Ctrl-c* and copy the pre-compiled results into this folder using 
 
-    course_user> cp ~/biosec_course/misc/assembler_tutorial/minimap.paf .
+    course_user> cp ~/biosec_course/misc/assembler_prac/minimap.paf .
 
 Now use the read overlap information from minimap and the sequences from the filtered fastq file to assemble unitigs using the tool *miniasm*
 
@@ -117,7 +117,7 @@ Compare the two statistics. Do some of the miniasm unitigs match the reference s
 
 To compare the miniasm assembly to the reference genome use the tool dnadiff that is part of the Mummer package. Mummer is a fast aligner that can align complete genomes in relatively short time.
 
-    course_user> dnadiff -p dnadiff ~/biosec_course/misc/assembly_practical/b_fermentans.fna miniasm.fasta
+    course_user> dnadiff -p dnadiff ~/biosec_course/misc/assembly_prac/b_fermentans.fna miniasm.fasta
 
 The above command will align the B. fermentans sequence with the miniasm unitigs in the fasta file and produce a series of output files that all start with the prefix *dnadiff*. Open the file *dnadiff.report* (e.g. by navigating to the folder and double-clicking it) to see a report of the analysis. 
 
