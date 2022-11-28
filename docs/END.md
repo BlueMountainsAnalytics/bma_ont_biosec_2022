@@ -8,7 +8,6 @@ For questions, comments or to discuss potential projects please reach out to
 
 tim.kahlke@bluemountainsanalytics.com.au
 
-
 <img src="figures/bma.png" height="100px">
 
 
