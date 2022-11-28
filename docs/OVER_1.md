@@ -5,7 +5,7 @@
 The general workflow of long-read whole genome sequence analysis can  usually includes the following steps
 
 <center>
-<img src="figures/WF.png" width="500px">
+<img src="figures/over_1.png" width="600px">
 </center>
 
 Especially the assembly step itself is often iterative depending on the input data, species sequenced and data characteristics. For example, different assemblers perform differently based on the species sequenced. Similarly, chosen cut-oofs for the QC step can affect downstream analyses. Therefore, it is common to use different assemblers and compare the outcome to achieve the best possible result.
@@ -22,9 +22,3 @@ During this course you will
 
 <p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC.html">CONTINUE -></a>
 </p>
-
-~                                                                                                                                                                                              
-~                                                                                                                                                                                              
-~                                                                                                                                                                                              
-~                                                                                                                                                                                              
-~                             

@@ -12,3 +12,6 @@ In this tutorial we will use two different assemblers/assembly pipelines, Flye, 
   <b>1. What is the best assembler to use?</b><br>The answer to this question is something like "It depends.". Different assemblers will perform differently for different genomes. Factors such as genome size, repetitiveness, GC content and others can all influence the performance of the assemblers. Best practice is to run multiple assemblers, compare the results and then decide yourself which one to use.<br><br>
   <b>2. When is my assembly done?</b><br>Currently, the answer to this question is <i>Never.</i>. As an example: the Human Genome is the best studied genome in the world with thousands of individuals sequenced and millions (billions?) of dollars spent. Still, until recently up to 20% of the Human Genome remained unassembled and only resent long-read sequencing technologies enabled us to slowly close the gaps on these last 20%. This does not mean you can never finish you project. It means <u>your assembly is done when it can answer the questions you want to ask!</u>
   </div>
+
+<p align="right"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_M.html">CONTINUE -></a>
+</p>

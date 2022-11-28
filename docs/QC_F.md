@@ -21,7 +21,7 @@ Open the NanoPlot_report.html as before.
   </ol>
 </div>
 
-Answers](QC_ANS.md)
+[Answers](QC_ANS.md)
 
 ## Basecalling Oxford Nanopore Data
 

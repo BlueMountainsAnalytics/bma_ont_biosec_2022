@@ -4,7 +4,7 @@
 
 This course is intended to give an overview and good working knowledge for anyone who wants to get into bioinformatics for long-read sequencing data analysis. As an introduction it won't cover advanced tool use or workflows but it will introduce the main steps and standard tools used for long-read data analysis and raise awareness for potential problems and pitfalls.
 
-<img src="figures/over_1.png" height="400px">
+<img src="figures/over_1.png" height="600px">
 
 
 # Course structure

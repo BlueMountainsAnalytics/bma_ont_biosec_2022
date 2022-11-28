@@ -45,7 +45,7 @@ awk ’/^S/{print “>”$2”\n”$3}’ miniasm.gfa > miniasm.fasta
 
 This will create a fasta file with all assembled unitigs called miniasm.fasta. 
 
-div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
+<div style="background-color:#fcfce5;border-radius:5px;border-style:solid;border-color:gray;padding:5px">
   {% octicon info height:32 class:"right left" aria-label:hi %}
   A *fasta* file is the predecessor of the fastq file format. In contrast to the fastq file it only stores the name of a sequence in one line starting with a bigger-than sign (>) and the sequence in the lines after the header line. Fasta was the most common sequence file format prior to the fastq format. 
 </div>
@@ -102,7 +102,7 @@ After a while you will get the results of the search. The important metrics to a
    <li>How closely do you think is the hit organism related to our critter?</li>
  </ol>
 </div>
-[Answer](ASS_ANS.md#blast-results))
+[Answer](ASS_ANS.md#blast-results)
 
 
 ### Compare the complete assembly to a reference

@@ -1,6 +1,6 @@
 # How to set up the course environment 
 
-11[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](VM.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](INTRO_1.md)
+[{% octicon arrow-left height:32 class:"right left" vertical-align:middle aria-label:hi %}](VM.md) [{% octicon home height:32 class:"right left" aria-label:hi %}](index.md) [{% octicon arrow-right height:32 class:"right left" aria-label:hi %}](INTRO_1.md)
 
 # VirtualBox users
 
@@ -8,9 +8,9 @@
 
 To use the VIrtualBox image you need 
 
- * >= 64GB free space
- * >= 4GB RAM (16GB recommended, see below)
- * >= Quadcore CPU
+ * 64GB free space
+ * 4GB RAM (16GB recommended, see below)
+ * Quadcore CPU
 
 ## Download and import the VirtualBox course image
 
@@ -26,7 +26,7 @@ Click on *Import Appliance* in the middle of the screen
 
 In the new window, click on the little folder in the *file* section and in the pop-up file browser navigate to the biosec_anu.ova file you just downloaded.
 
-<img src="figures/env_2.png" height="300px">
+<img src="figures/env_2.png" height="100px">
 
 Click *Continue* and on the next window *Import* to finish the import process.
 

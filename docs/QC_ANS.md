@@ -50,6 +50,8 @@ Overall, this was not a good sequencing run overall. However, the flowcell used 
 
 <p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/QC_N.html">BACK =></a>
 
+<br>
+
 ## 9. What quality cut-off did the basecaller use?
 
 No read were called below Q5.
