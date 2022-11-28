@@ -88,3 +88,17 @@ In contrast to the miniasm assemlbye Medaka has improved the flye assembly only 
 
 <p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_ERR.html">BACK =></a>
 
+----
+
+## Completeness analysis with BUSCO
+
+### 1. How complete are the 2 assemblies? What are the differences?
+
+The miniasm assembly has only a very low BUSCO score with the majority of BUSCO genes either not found or fragmented. On the other hand, the flye assembly has >75% of BUSCO genes found and complete and only 12% missing.
+
+
+### 2. Overall, which assembly would you prefer?
+
+Although the total sequence lenght of both assemblies is somewhat comparable and even the final %-identity in comparison to the reference are comparable, the flye assembly is definitely to prefer. There is a high likelyhood that the Flye assembly contains a nearly complete genome of strain *B. fermentans*. Even if N50 and contig length don't necessarily mean it's the better assembly, the BUSCO analysis supports that assumption.
+
+<p align="left"><a href="https://bluemountainsanalytics.github.io/bma_ont_biosec_2022/ASS_BUSC.html">BACK =></a>
