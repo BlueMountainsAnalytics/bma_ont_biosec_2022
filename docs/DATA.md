@@ -32,6 +32,14 @@ Create the course environment with the following commands:
     course_user> install.sh
     course_user> basta.sh
 
+
+## Course VM account
+
+Account details to login/unlock the screen are
+
+login: course_user
+passwd: course_user
+
 ## Course data
 
 All course data will be provided with the VirtualBox image. However, a zipped version of the course data and directory structure can be found [here](https://drive.google.com/drive/folders/1qvpQ2fwCogx39klaP22JcVYVEwXxf50g?usp=share_link) inside the *nbiosec_course.tar.gz* file.
