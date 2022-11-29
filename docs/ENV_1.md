@@ -36,6 +36,14 @@ You should now see the new *biosec_anu* appliance in the menu on the left. Selec
 
 If everything works well you can delete the *biosec_anu.avo* file from your computer. It is not needed anymore and is only taking up lots of space.
 
+### Ubuntu account details
+
+To log in (and unlock the screen)
+
+Login: course_user
+
+Passwd: course_user
+
 ## Non-VirtualBox users
 
 TO set up the course environment on your local machine without VirtualBox, e.g., on Ubuntu and MACOS (Intel), please download the *biosec_course.tar.gz* file from the *Blue Mountains Analytics* Google Drive [here](https://drive.google.com/drive/folders/1qvpQ2fwCogx39klaP22JcVYVEwXxf50g?usp=share_link).
