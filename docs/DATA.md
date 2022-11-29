@@ -38,6 +38,7 @@ Create the course environment with the following commands:
 Account details to login/unlock the screen are
 
 login: course_user
+
 passwd: course_user
 
 ## Course data
