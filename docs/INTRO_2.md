@@ -36,20 +36,20 @@ As you can see in the example above the so called **path** to the current direct
 Now that we know where we are lets try to change into another directory. For example, let’s say we know that there is a directory */data* in our home directory. To change into the data directory we use the command **cd** (short for *change directory*) followed by the location of the directory we want to change into. 
 
 
-    course_user> cd ./data
+    course_user> cd ./niosec_course
     course_user> pwd
-    /homes/course_user/data
+    /homes/course_user/biosec_course
     course_user>
 
 The **./** before the **data** tells the command-line to look in our current directory. You could also just type **cd data**, however it is good practice to use explicit "in this directory".
 
-When we use the **pwd** command to check that we actually changed into the *data* directory the output shows */homes/course_user/data* as our new location. This **path** is called the **absolute path** of the *data* directory. In contrast we only used the **relative path** for the cd  command, i.e., **./data**. Relative paths are given relative to the current working directory, i.e., the directory we are currently in. Additionally, relative paths do NOT start with a *“/”* but either without a slash or using the **./** notation.
+When we use the **pwd** command to check that we actually changed into the *data* directory the output shows */homes/course_user/biosec_course* as our new location. This **path** is called the **absolute path** of the *data* directory. In contrast we only used the **relative path** for the cd  command, i.e., **./data**. Relative paths are given relative to the current working directory, i.e., the directory we are currently in. Additionally, relative paths do NOT start with a *“/”* but either without a slash or using the **./** notation.
 
 In contrast to relative paths **absolute paths** specify a directory regardless of the current working directory. This means that we can change into the *./data* directory from anywhere by using its absolute path. Absolute paths ALWAYS start with a **/** which denotes the lowest possible directory on a computer, the **root directory**. So, instead of using the relative path we could also change into the *./data* directory from anywhere by typing
 
-    course_user> cd /homes/course_user/data
+    course_user> cd /homes/course_user/biosec_course
     course_user> pwd
-    course_user> /homes/course_user/data
+    course_user> /homes/course_user/biosec_course
     course_user>
 
 However, typing the absolute path whenever you want to change into a directory can be tedious, hence the **./** notation for relative paths. There are three more special ways of how to use the **cd** command:
@@ -63,7 +63,7 @@ However, typing the absolute path whenever you want to change into a directory c
 The first one, **cd ..** uses the dot-notation to change into the directory above this one, the so called **parent directory**, without having to type the absolute path:
 
     course_user> pwd
-    /homes/course_user/data
+    /homes/course_user/biosec_course
     course_user> cd ..
     course_user> pwd
     /homes/course_user
@@ -71,7 +71,7 @@ The first one, **cd ..** uses the dot-notation to change into the directory abov
 The second one, the **cd** command on its own, will always change into the users home directory, regardless of our current location:
 
     course_user> pwd
-    /homes/course_user/data/sequences/test1/
+    /homes/course_user/biosec_course/qc_practical
     course_user> cd
     course_user> pwd
     /homes/course_user
@@ -79,13 +79,13 @@ The second one, the **cd** command on its own, will always change into the users
 The third command, **cd -** will change back to the directory we just came from:
 
     course_user> pwd
-    /homes/course_user/data/sequences/test1
+    /homes/course_user/biosec_course/qc_practical
     course_user> cd 
     course_user> pwd
     /homes/course_user
     course_user> cd -
     course_user> pwd
-    /homes/course_user/data/sequences/test1
+    /homes/course_user/biosec_course/qc_practical
 
 
 
