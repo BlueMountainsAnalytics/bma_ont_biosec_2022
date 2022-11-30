@@ -22,8 +22,8 @@ at the 28th-30th of November 2022 at the Australian National University.
  * [Genome Assembly](ASS.md)
    * [Minimap-Miniasm pipeline](ASS_M.md)
    * [Flye](ASS_F.md)
-   * [Error correction using Medaka](ERR_M.md)
-   * [Completeness analysis using BUSCO](BUSC.md)
+   * [Error correction using Medaka](ASS_ERR.md)
+   * [Completeness analysis using BUSCO](ASS_BUSC.md)
  * [Basic ITS analysis](ITS.md)
  * APPENDIX
    * [Conda / Mamba Cheat Sheet](CON-CS.md)
