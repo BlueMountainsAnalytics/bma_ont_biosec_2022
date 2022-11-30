@@ -9,7 +9,7 @@ In the directory *qc_practical* create another directory, *example_2*. Call Nano
 
     course_user> cd ~/biosec_course/qc_practical
     course_user> mkdir example_2
-    course_user> NanoPlot --fastq ./fastq_file/fastq_runid_2.fastq -o ./example_2
+    course_user> NanoPlot --fastq ./R10-202001.fastq -o ./example_2
  
 Open the NanoPlot_report.html as before. 
 
@@ -65,7 +65,7 @@ Once nanoFilt is done we can already see the difference in file size of the two 
 Take a look at the output, again using Nanoplot. Create a new output directory *example_3* for it.
 
     course_user> mkdir example_3
-    course_user> NanoPlot --fastq ./fastq_file/filtered.fastq -o ./example_3
+    course_user> NanoPlot --fastq ./filtered.fastq -o ./example_3
 
 Open the *Nanoplot-report.html* file and have a look at the read length, how many reads were fitlered out and how filtering affected the overall quality of the sequencing output.
 
